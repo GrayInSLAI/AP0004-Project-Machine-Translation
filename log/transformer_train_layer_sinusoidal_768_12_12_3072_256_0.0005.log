@@ -1,0 +1,40 @@
+
+=== Output Directory: ./transformer_checkpoints/exp_128_layer_sinusoidal_768_12_12_3072_256_0.0005 ===
+Config: RMSNorm, Sinusoidal, Layers=12, Dropout=0.3
+Loading Data...
+Tokenizer Loaded. PAD ID: 1, SOS ID: 0, EOS ID: 2
+Loading and Pre-tokenizing data from ./data/train_100k.jsonl...
+Tokenizing: 0it [00:00, ?it/s]Tokenizing: 55691it [00:10, 5569.03it/s]Tokenizing: 100000it [00:18, 5397.34it/s]
+Data Loaded. Kept: 100000, Filtered: 0 (Too long > 128)
+Tokenizer Loaded. PAD ID: 1, SOS ID: 0, EOS ID: 2
+Loading and Pre-tokenizing data from ./data/valid.jsonl...
+Tokenizing: 0it [00:00, ?it/s]Tokenizing: 500it [00:00, 4914.76it/s]
+Data Loaded. Kept: 500, Filtered: 0 (Too long > 128)
+Tokenizer Loaded. PAD ID: 1, SOS ID: 0, EOS ID: 2
+Loading and Pre-tokenizing data from ./data/test.jsonl...
+Tokenizing: 0it [00:00, ?it/s]Tokenizing: 200it [00:00, 3151.60it/s]
+Data Loaded. Kept: 200, Filtered: 0 (Too long > 128)
+Model Initialized: LAYER Norm, SINUSOIDAL Pos Enc.
+Starting Training...
+Training:   0%|          | 0/391 [00:00<?, ?it/s]/usr/local/lib/python3.10/dist-packages/torch/nn/functional.py:5137: UserWarning: Support for mismatched key_padding_mask and attn_mask is deprecated. Use same type for both instead.
+  warnings.warn(
+Training:   0%|          | 0/391 [00:00<?, ?it/s, loss=9.0809, lr=0.000000]                                                                           Traceback (most recent call last):
+  File "/data/250010060/nlp_llm_project_dev2/./transformer_train.py", line 248, in <module>
+    main()
+  File "/data/250010060/nlp_llm_project_dev2/./transformer_train.py", line 221, in main
+    train_loss = train_epoch(model, train_loader, optimizer, scheduler, criterion, device, pad_id)
+  File "/data/250010060/nlp_llm_project_dev2/./transformer_train.py", line 135, in train_epoch
+    logits = model(src, tgt_input, src_key_padding_mask=src_mask, tgt_key_padding_mask=tgt_mask)
+  File "/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py", line 1527, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py", line 1536, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/data/250010060/nlp_llm_project_dev2/transformer_models.py", line 283, in forward
+    logits = self.output_layer(output)
+  File "/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py", line 1527, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py", line 1536, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/torch/nn/modules/linear.py", line 116, in forward
+    return F.linear(input, self.weight, self.bias)
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 994.00 MiB. GPU 

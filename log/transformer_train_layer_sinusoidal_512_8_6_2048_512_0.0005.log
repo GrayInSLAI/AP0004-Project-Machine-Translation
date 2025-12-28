@@ -1,0 +1,1674 @@
+
+=== Output Directory: ./transformer_checkpoints/exp_128_layer_sinusoidal_512_8_6_2048_512_0.0005 ===
+Config: RMSNorm, Sinusoidal, Layers=6, Dropout=0.3
+Loading Data...
+Tokenizer Loaded. PAD ID: 1, SOS ID: 0, EOS ID: 2
+Loading and Pre-tokenizing data from ./data/train_100k.jsonl...
+
+Tokenizing: 0it [00:00, ?it/s]
+Tokenizing: 64061it [00:10, 6406.03it/s]
+Tokenizing: 100000it [00:15, 6298.88it/s]
+Data Loaded. Kept: 100000, Filtered: 0 (Too long > 128)
+Tokenizer Loaded. PAD ID: 1, SOS ID: 0, EOS ID: 2
+Loading and Pre-tokenizing data from ./data/valid.jsonl...
+
+Tokenizing: 0it [00:00, ?it/s]
+Tokenizing: 500it [00:00, 6151.67it/s]
+Data Loaded. Kept: 500, Filtered: 0 (Too long > 128)
+Tokenizer Loaded. PAD ID: 1, SOS ID: 0, EOS ID: 2
+Loading and Pre-tokenizing data from ./data/test.jsonl...
+
+Tokenizing: 0it [00:00, ?it/s]
+Tokenizing: 200it [00:00, 4498.25it/s]
+Data Loaded. Kept: 200, Filtered: 0 (Too long > 128)
+Model Initialized: LAYER Norm, SINUSOIDAL Pos Enc.
+Starting Training...
+
+Training:   0%|          | 0/196 [00:00<?, ?it/s]/usr/local/lib/python3.10/dist-packages/torch/nn/functional.py:5137: UserWarning: Support for mismatched key_padding_mask and attn_mask is deprecated. Use same type for both instead.
+  warnings.warn(
+
+Training:   0%|          | 0/196 [00:00<?, ?it/s, loss=9.0267, lr=0.000000]
+Training:  19%|█▉        | 37/196 [00:10<00:43,  3.67it/s, loss=9.0267, lr=0.000000]
+Training:  19%|█▉        | 37/196 [00:13<00:43,  3.67it/s, loss=8.3849, lr=0.000009]
+Training:  40%|███▉      | 78/196 [00:20<00:30,  3.86it/s, loss=8.3849, lr=0.000009]
+Training:  40%|███▉      | 78/196 [00:26<00:30,  3.86it/s, loss=8.0678, lr=0.000018]
+Training:  60%|██████    | 118/196 [00:30<00:20,  3.89it/s, loss=8.0678, lr=0.000018]
+Training:  60%|██████    | 118/196 [00:38<00:20,  3.89it/s, loss=7.6223, lr=0.000026]
+Training:  82%|████████▏ | 160/196 [00:40<00:09,  3.99it/s, loss=7.6223, lr=0.000026]
+                                                                                     
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s]
+                                                 
+Epoch 01 | Time: 50s | T_Loss: 8.026 | V_Loss: 7.345 | BLEU: 0.02
+ >> Sample: <s>,,,,,,,,,,,,,,,,,,,,,,,,,,, the, the,,, the, the, the.</s>.</s>.</s></s></s></s></s></s>
+ >> New Best! Saving to ./transformer_checkpoints/exp_128_layer_sinusoidal_512_8_6_2048_512_0.0005
+
+Training:   0%|          | 0/196 [00:00<?, ?it/s]
+Training:   0%|          | 0/196 [00:00<?, ?it/s, loss=7.2274, lr=0.000034]
+Training:  20%|██        | 40/196 [00:10<00:39,  3.97it/s, loss=7.2274, lr=0.000034]
+Training:  20%|██        | 40/196 [00:12<00:39,  3.97it/s, loss=7.0338, lr=0.000043]
+Training:  41%|████      | 80/196 [00:20<00:29,  3.88it/s, loss=7.0338, lr=0.000043]
+Training:  41%|████      | 80/196 [00:25<00:29,  3.88it/s, loss=6.8753, lr=0.000052]
+Training:  62%|██████▏   | 122/196 [00:30<00:18,  4.00it/s, loss=6.8753, lr=0.000052]
+Training:  62%|██████▏   | 122/196 [00:37<00:18,  4.00it/s, loss=6.6902, lr=0.000061]
+Training:  84%|████████▍ | 165/196 [00:40<00:07,  4.10it/s, loss=6.6902, lr=0.000061]
+                                                                                     
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s]
+                                                 
+Epoch 02 | Time: 49s | T_Loss: 6.880 | V_Loss: 6.756 | BLEU: 0.08
+ >> Sample: <s>The US, the US of the US, the US, the US, the US, and the US, and the US, and the US, and the US, and the US, and the US, and the US.</s> of the
+ >> New Best! Saving to ./transformer_checkpoints/exp_128_layer_sinusoidal_512_8_6_2048_512_0.0005
+
+Training:   0%|          | 0/196 [00:00<?, ?it/s]
+Training:   0%|          | 0/196 [00:00<?, ?it/s, loss=6.4974, lr=0.000069]
+Training:  21%|██▏       | 42/196 [00:10<00:37,  4.13it/s, loss=6.4974, lr=0.000069]
+Training:  21%|██▏       | 42/196 [00:12<00:37,  4.13it/s, loss=6.3290, lr=0.000077]
+Training:  43%|████▎     | 85/196 [00:20<00:26,  4.20it/s, loss=6.3290, lr=0.000077]
+Training:  43%|████▎     | 85/196 [00:23<00:26,  4.20it/s, loss=6.2364, lr=0.000086]
+Training:  65%|██████▌   | 128/196 [00:30<00:16,  4.24it/s, loss=6.2364, lr=0.000086]
+Training:  65%|██████▌   | 128/196 [00:36<00:16,  4.24it/s, loss=6.0972, lr=0.000095]
+Training:  65%|██████▌   | 128/196 [00:40<00:16,  4.24it/s, loss=6.0972, lr=0.000095]
+Training:  87%|████████▋ | 171/196 [00:40<00:06,  4.15it/s, loss=6.0972, lr=0.000095]
+                                                                                     
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s]
+                                                 
+Epoch 03 | Time: 48s | T_Loss: 6.240 | V_Loss: 6.366 | BLEU: 0.10
+ >> Sample: <s>The US is a new of the US, the US, the US, the US, and the US is not be not be a States, but it is not be a new.</s>.</s>.</s>.</s>.</s>.</s>.
+ >> New Best! Saving to ./transformer_checkpoints/exp_128_layer_sinusoidal_512_8_6_2048_512_0.0005
+
+Training:   0%|          | 0/196 [00:00<?, ?it/s]
+Training:   0%|          | 0/196 [00:00<?, ?it/s, loss=6.0208, lr=0.000103]
+Training:  21%|██        | 41/196 [00:10<00:38,  4.04it/s, loss=6.0208, lr=0.000103]
+Training:  21%|██        | 41/196 [00:12<00:38,  4.04it/s, loss=5.9443, lr=0.000112]
+Training:  42%|████▏     | 82/196 [00:20<00:29,  3.91it/s, loss=5.9443, lr=0.000112]
+Training:  42%|████▏     | 82/196 [00:25<00:29,  3.91it/s, loss=5.8482, lr=0.000120]
+Training:  62%|██████▏   | 122/196 [00:31<00:18,  3.90it/s, loss=5.8482, lr=0.000120]
+Training:  62%|██████▏   | 122/196 [00:37<00:18,  3.90it/s, loss=5.7722, lr=0.000129]
+Training:  85%|████████▍ | 166/196 [00:41<00:07,  4.08it/s, loss=5.7722, lr=0.000129]
+                                                                                     
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s]
+                                                 
+Epoch 04 | Time: 49s | T_Loss: 5.855 | V_Loss: 6.038 | BLEU: 0.11
+ >> Sample: <s>The US is a new binal of the United States, and the United States, the United States, the United States, and the world’s own year.</s>.</s>.</s>.</s>.</s>.</s>.</s>.</s>
+ >> New Best! Saving to ./transformer_checkpoints/exp_128_layer_sinusoidal_512_8_6_2048_512_0.0005
+
+Training:   0%|          | 0/196 [00:00<?, ?it/s]
+Training:   0%|          | 0/196 [00:00<?, ?it/s, loss=5.6775, lr=0.000137]
+Training:  20%|█▉        | 39/196 [00:10<00:41,  3.79it/s, loss=5.6775, lr=0.000137]
+Training:  20%|█▉        | 39/196 [00:13<00:41,  3.79it/s, loss=5.6074, lr=0.000146]
+Training:  42%|████▏     | 82/196 [00:20<00:27,  4.08it/s, loss=5.6074, lr=0.000146]
+Training:  42%|████▏     | 82/196 [00:24<00:27,  4.08it/s, loss=5.5289, lr=0.000155]
+Training:  64%|██████▍   | 125/196 [00:30<00:17,  4.17it/s, loss=5.5289, lr=0.000155]
+Training:  64%|██████▍   | 125/196 [00:36<00:17,  4.17it/s, loss=5.4075, lr=0.000163]
+Training:  86%|████████▌ | 168/196 [00:40<00:06,  4.20it/s, loss=5.4075, lr=0.000163]
+                                                                                     
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s]
+                                                 
+Epoch 05 | Time: 48s | T_Loss: 5.517 | V_Loss: 5.691 | BLEU: 0.19
+ >> Sample: <s>In the 196, the Bala, the COC, the COC’s government has been a new bold to the bold of the bold of the world’s own bold.</s> of the b
+ >> New Best! Saving to ./transformer_checkpoints/exp_128_layer_sinusoidal_512_8_6_2048_512_0.0005
+
+Training:   0%|          | 0/196 [00:00<?, ?it/s]
+Training:   0%|          | 0/196 [00:00<?, ?it/s, loss=5.2939, lr=0.000171]
+Training:  21%|██        | 41/196 [00:10<00:38,  4.06it/s, loss=5.2939, lr=0.000171]
+Training:  21%|██        | 41/196 [00:12<00:38,  4.06it/s, loss=5.2534, lr=0.000180]
+Training:  43%|████▎     | 84/196 [00:20<00:27,  4.13it/s, loss=5.2534, lr=0.000180]
+Training:  43%|████▎     | 84/196 [00:24<00:27,  4.13it/s, loss=5.1592, lr=0.000189]
+Training:  64%|██████▍   | 126/196 [00:30<00:17,  4.05it/s, loss=5.1592, lr=0.000189]
+Training:  64%|██████▍   | 126/196 [00:36<00:17,  4.05it/s, loss=5.0651, lr=0.000198]
+Training:  86%|████████▌ | 169/196 [00:41<00:06,  4.12it/s, loss=5.0651, lr=0.000198]
+                                                                                     
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s]
+                                                 
+Epoch 06 | Time: 49s | T_Loss: 5.186 | V_Loss: 5.467 | BLEU: 0.27
+ >> Sample: <s>In the same time, the COC’s COC, the SOC has been a result of the body of the SOC’s diagnosis, which has been made a fewer of the d
+ >> New Best! Saving to ./transformer_checkpoints/exp_128_layer_sinusoidal_512_8_6_2048_512_0.0005
+
+Training:   0%|          | 0/196 [00:00<?, ?it/s]
+Training:   0%|          | 0/196 [00:00<?, ?it/s, loss=5.0272, lr=0.000206]
+Training:  23%|██▎       | 45/196 [00:10<00:34,  4.40it/s, loss=5.0272, lr=0.000206]
+Training:  23%|██▎       | 45/196 [00:11<00:34,  4.40it/s, loss=4.9480, lr=0.000214]
+Training:  46%|████▌     | 90/196 [00:21<00:25,  4.16it/s, loss=4.9480, lr=0.000214]
+Training:  46%|████▌     | 90/196 [00:23<00:25,  4.16it/s, loss=4.8990, lr=0.000223]
+Training:  68%|██████▊   | 134/196 [00:31<00:14,  4.25it/s, loss=4.8990, lr=0.000223]
+Training:  68%|██████▊   | 134/196 [00:35<00:14,  4.25it/s, loss=4.8717, lr=0.000232]
+Training:  68%|██████▊   | 134/196 [00:41<00:14,  4.25it/s, loss=4.8717, lr=0.000232]
+Training:  90%|████████▉ | 176/196 [00:42<00:04,  4.14it/s, loss=4.8717, lr=0.000232]
+                                                                                     
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s]
+                                                 
+Epoch 07 | Time: 48s | T_Loss: 4.905 | V_Loss: 5.261 | BLEU: 0.52
+ >> Sample: <s>In the first time, the COC’s COC’s COC, the tactic of the COC’s pension of the COC’s burning, the tacticious
+ >> New Best! Saving to ./transformer_checkpoints/exp_128_layer_sinusoidal_512_8_6_2048_512_0.0005
+
+Training:   0%|          | 0/196 [00:00<?, ?it/s]
+Training:   0%|          | 0/196 [00:00<?, ?it/s, loss=4.7519, lr=0.000240]
+Training:  22%|██▏       | 43/196 [00:10<00:35,  4.30it/s, loss=4.7519, lr=0.000240]
+Training:  22%|██▏       | 43/196 [00:11<00:35,  4.30it/s, loss=4.7316, lr=0.000249]
+Training:  44%|████▍     | 86/196 [00:20<00:25,  4.25it/s, loss=4.7316, lr=0.000249]
+Training:  44%|████▍     | 86/196 [00:23<00:25,  4.25it/s, loss=4.6514, lr=0.000257]
+Training:  67%|██████▋   | 131/196 [00:30<00:14,  4.35it/s, loss=4.6514, lr=0.000257]
+Training:  67%|██████▋   | 131/196 [00:34<00:14,  4.35it/s, loss=4.6141, lr=0.000266]
+Training:  90%|████████▉ | 176/196 [00:40<00:04,  4.32it/s, loss=4.6141, lr=0.000266]
+                                                                                     
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s]
+                                                 
+Epoch 08 | Time: 46s | T_Loss: 4.669 | V_Loss: 5.071 | BLEU: 0.92
+ >> Sample: <s>Last month, the Court of the Court of the Court of the Centeron Centeron, the strapped the stage of the US and the country’s massive impact on the bott
+ >> New Best! Saving to ./transformer_checkpoints/exp_128_layer_sinusoidal_512_8_6_2048_512_0.0005
+
+Training:   0%|          | 0/196 [00:00<?, ?it/s]
+Training:   0%|          | 0/196 [00:00<?, ?it/s, loss=4.5291, lr=0.000274]
+Training:  21%|██        | 41/196 [00:10<00:38,  4.07it/s, loss=4.5291, lr=0.000274]
+Training:  21%|██        | 41/196 [00:12<00:38,  4.07it/s, loss=4.4760, lr=0.000283]
+Training:  42%|████▏     | 82/196 [00:20<00:28,  4.07it/s, loss=4.4760, lr=0.000283]
+Training:  42%|████▏     | 82/196 [00:24<00:28,  4.07it/s, loss=4.4449, lr=0.000292]
+Training:  63%|██████▎   | 123/196 [00:30<00:18,  4.06it/s, loss=4.4449, lr=0.000292]
+Training:  63%|██████▎   | 123/196 [00:37<00:18,  4.06it/s, loss=4.4211, lr=0.000300]
+Training:  84%|████████▎ | 164/196 [00:40<00:07,  4.06it/s, loss=4.4211, lr=0.000300]
+                                                                                     
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s]
+                                                 
+Epoch 09 | Time: 49s | T_Loss: 4.462 | V_Loss: 4.916 | BLEU: 1.19
+ >> Sample: <s>Last week, the Centeron of the Centeron Centeron, the straighted the straight of the Talibetan’s private-sector diagnosis.</s> the tact
+ >> New Best! Saving to ./transformer_checkpoints/exp_128_layer_sinusoidal_512_8_6_2048_512_0.0005
+
+Training:   0%|          | 0/196 [00:00<?, ?it/s]
+Training:   0%|          | 0/196 [00:00<?, ?it/s, loss=4.3436, lr=0.000308]
+Training:  21%|██▏       | 42/196 [00:10<00:36,  4.18it/s, loss=4.3436, lr=0.000308]
+Training:  21%|██▏       | 42/196 [00:12<00:36,  4.18it/s, loss=4.3074, lr=0.000317]
+Training:  43%|████▎     | 84/196 [00:20<00:26,  4.16it/s, loss=4.3074, lr=0.000317]
+Training:  43%|████▎     | 84/196 [00:24<00:26,  4.16it/s, loss=4.2920, lr=0.000326]
+Training:  64%|██████▍   | 126/196 [00:30<00:17,  4.09it/s, loss=4.2920, lr=0.000326]
+Training:  64%|██████▍   | 126/196 [00:36<00:17,  4.09it/s, loss=4.2396, lr=0.000335]
+Training:  86%|████████▌ | 169/196 [00:40<00:06,  4.15it/s, loss=4.2396, lr=0.000335]
+                                                                                     
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s]
+                                                 
+Epoch 10 | Time: 48s | T_Loss: 4.274 | V_Loss: 4.787 | BLEU: 1.45
+ >> Sample: <s>Last week, the Meeth Foundation of the Talibet’s private private private private housing, has triggering a dragmatic discussion of the country’s massive shock-up to the country
+ >> New Best! Saving to ./transformer_checkpoints/exp_128_layer_sinusoidal_512_8_6_2048_512_0.0005
+
+Training:   0%|          | 0/196 [00:00<?, ?it/s]
+Training:   0%|          | 0/196 [00:00<?, ?it/s, loss=4.1579, lr=0.000343]
+Training:  21%|██▏       | 42/196 [00:10<00:37,  4.15it/s, loss=4.1579, lr=0.000343]
+Training:  21%|██▏       | 42/196 [00:12<00:37,  4.15it/s, loss=4.1477, lr=0.000351]
+Training:  43%|████▎     | 85/196 [00:20<00:26,  4.20it/s, loss=4.1477, lr=0.000351]
+Training:  43%|████▎     | 85/196 [00:24<00:26,  4.20it/s, loss=4.0920, lr=0.000360]
+Training:  65%|██████▌   | 128/196 [00:30<00:16,  4.17it/s, loss=4.0920, lr=0.000360]
+Training:  65%|██████▌   | 128/196 [00:36<00:16,  4.17it/s, loss=4.1192, lr=0.000369]
+Training:  87%|████████▋ | 171/196 [00:40<00:05,  4.20it/s, loss=4.1192, lr=0.000369]
+                                                                                     
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s]
+                                                 
+Epoch 11 | Time: 47s | T_Loss: 4.107 | V_Loss: 4.669 | BLEU: 1.83
+ >> Sample: <s>Last week, the Carbon Markets in the Bigladesh, and the foreign-sector signs that the timidation of the country’s industrialization is a clear.</s> in the country’s excess
+ >> New Best! Saving to ./transformer_checkpoints/exp_128_layer_sinusoidal_512_8_6_2048_512_0.0005
+
+Training:   0%|          | 0/196 [00:00<?, ?it/s]
+Training:   0%|          | 0/196 [00:00<?, ?it/s, loss=3.9802, lr=0.000377]
+Training:  22%|██▏       | 43/196 [00:10<00:35,  4.30it/s, loss=3.9802, lr=0.000377]
+Training:  22%|██▏       | 43/196 [00:11<00:35,  4.30it/s, loss=3.9882, lr=0.000386]
+Training:  44%|████▍     | 87/196 [00:20<00:25,  4.35it/s, loss=3.9882, lr=0.000386]
+Training:  44%|████▍     | 87/196 [00:23<00:25,  4.35it/s, loss=3.9179, lr=0.000394]
+Training:  67%|██████▋   | 131/196 [00:30<00:15,  4.28it/s, loss=3.9179, lr=0.000394]
+Training:  67%|██████▋   | 131/196 [00:35<00:15,  4.28it/s, loss=3.9218, lr=0.000403]
+Training:  89%|████████▉ | 174/196 [00:40<00:05,  4.26it/s, loss=3.9218, lr=0.000403]
+                                                                                     
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s]
+                                                 
+Epoch 12 | Time: 47s | T_Loss: 3.962 | V_Loss: 4.557 | BLEU: 2.01
+ >> Sample: <s>Last week, the Carbon Mechanism stated a stage, with a straightforward discussion of the country’s excess capacity to shape the rate of the country’s excess capacity.</s>ly, the
+ >> New Best! Saving to ./transformer_checkpoints/exp_128_layer_sinusoidal_512_8_6_2048_512_0.0005
+
+Training:   0%|          | 0/196 [00:00<?, ?it/s]
+Training:   0%|          | 0/196 [00:00<?, ?it/s, loss=3.8921, lr=0.000411]
+Training:  21%|██        | 41/196 [00:10<00:37,  4.09it/s, loss=3.8921, lr=0.000411]
+Training:  21%|██        | 41/196 [00:12<00:37,  4.09it/s, loss=3.8321, lr=0.000420]
+Training:  42%|████▏     | 83/196 [00:20<00:27,  4.13it/s, loss=3.8321, lr=0.000420]
+Training:  42%|████▏     | 83/196 [00:24<00:27,  4.13it/s, loss=3.8143, lr=0.000429]
+Training:  64%|██████▍   | 125/196 [00:30<00:17,  4.16it/s, loss=3.8143, lr=0.000429]
+Training:  64%|██████▍   | 125/196 [00:36<00:17,  4.16it/s, loss=3.8291, lr=0.000437]
+Training:  86%|████████▌ | 168/196 [00:40<00:06,  4.20it/s, loss=3.8291, lr=0.000437]
+                                                                                     
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s]
+                                                 
+Epoch 13 | Time: 47s | T_Loss: 3.828 | V_Loss: 4.468 | BLEU: 2.53
+ >> Sample: <s>Last week, the tumor of the Center for the US TBMR, the stance has triggered a straightforward discussion of the country’s excess capacity.</s>ly, the tact
+ >> New Best! Saving to ./transformer_checkpoints/exp_128_layer_sinusoidal_512_8_6_2048_512_0.0005
+
+Training:   0%|          | 0/196 [00:00<?, ?it/s]
+Training:   0%|          | 0/196 [00:00<?, ?it/s, loss=3.7352, lr=0.000445]
+Training:  21%|██        | 41/196 [00:10<00:37,  4.09it/s, loss=3.7352, lr=0.000445]
+Training:  21%|██        | 41/196 [00:12<00:37,  4.09it/s, loss=3.7462, lr=0.000454]
+Training:  44%|████▍     | 86/196 [00:20<00:25,  4.29it/s, loss=3.7462, lr=0.000454]
+Training:  44%|████▍     | 86/196 [00:23<00:25,  4.29it/s, loss=3.7270, lr=0.000463]
+Training:  44%|████▍     | 86/196 [00:30<00:25,  4.29it/s, loss=3.7270, lr=0.000463]
+Training:  67%|██████▋   | 131/196 [00:30<00:15,  4.28it/s, loss=3.7270, lr=0.000463]
+Training:  67%|██████▋   | 131/196 [00:35<00:15,  4.28it/s, loss=3.6455, lr=0.000471]
+Training:  89%|████████▉ | 175/196 [00:40<00:04,  4.30it/s, loss=3.6455, lr=0.000471]
+                                                                                     
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s]
+                                                 
+Epoch 14 | Time: 46s | T_Loss: 3.711 | V_Loss: 4.385 | BLEU: 2.55
+ >> Sample: <s>Last week, Cuba’s Microbial Daily stage, and it has triggered a straightforward discussion about the country’s excess capacity.</s>ly, the tumor of the
+ >> New Best! Saving to ./transformer_checkpoints/exp_128_layer_sinusoidal_512_8_6_2048_512_0.0005
+
+Training:   0%|          | 0/196 [00:00<?, ?it/s]
+Training:   0%|          | 0/196 [00:00<?, ?it/s, loss=3.6321, lr=0.000480]
+Training:  22%|██▏       | 43/196 [00:10<00:35,  4.28it/s, loss=3.6321, lr=0.000480]
+Training:  22%|██▏       | 43/196 [00:11<00:35,  4.28it/s, loss=3.6264, lr=0.000488]
+Training:  44%|████▍     | 86/196 [00:20<00:26,  4.18it/s, loss=3.6264, lr=0.000488]
+Training:  44%|████▍     | 86/196 [00:23<00:26,  4.18it/s, loss=3.5990, lr=0.000497]
+Training:  67%|██████▋   | 131/196 [00:30<00:15,  4.29it/s, loss=3.5990, lr=0.000497]
+Training:  67%|██████▋   | 131/196 [00:35<00:15,  4.29it/s, loss=3.5412, lr=0.000506]
+Training:  90%|████████▉ | 176/196 [00:41<00:04,  4.25it/s, loss=3.5412, lr=0.000506]
+                                                                                     
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s]
+                                                 
+Epoch 15 | Time: 47s | T_Loss: 3.606 | V_Loss: 4.314 | BLEU: 3.54
+ >> Sample: <s>Last week, the Cuba dropped a stage of the US Temor Amendment, and it has triggered a straightforward discussion about the country’s excess capacity.</s> in the
+ >> New Best! Saving to ./transformer_checkpoints/exp_128_layer_sinusoidal_512_8_6_2048_512_0.0005
+
+Training:   0%|          | 0/196 [00:00<?, ?it/s]
+Training:   0%|          | 0/196 [00:00<?, ?it/s, loss=3.4998, lr=0.000514]
+Training:  21%|██▏       | 42/196 [00:10<00:36,  4.19it/s, loss=3.4998, lr=0.000514]
+Training:  21%|██▏       | 42/196 [00:12<00:36,  4.19it/s, loss=3.5343, lr=0.000523]
+Training:  44%|████▍     | 87/196 [00:20<00:25,  4.32it/s, loss=3.5343, lr=0.000523]
+Training:  44%|████▍     | 87/196 [00:23<00:25,  4.32it/s, loss=3.5230, lr=0.000531]
+Training:  67%|██████▋   | 132/196 [00:30<00:15,  4.26it/s, loss=3.5230, lr=0.000531]
+Training:  67%|██████▋   | 132/196 [00:35<00:15,  4.26it/s, loss=3.5335, lr=0.000540]
+Training:  89%|████████▉ | 175/196 [00:41<00:04,  4.27it/s, loss=3.5335, lr=0.000540]
+                                                                                     
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s]
+                                                 
+Epoch 16 | Time: 47s | T_Loss: 3.513 | V_Loss: 4.241 | BLEU: 3.17
+ >> Sample: <s>Last week, the Cuba Business Amendment Bay, which imposed a steady discussion about the country’s output has been dramatic.</s>ly, in the face of a sharp debate about the country
+
+Training:   0%|          | 0/196 [00:00<?, ?it/s]
+Training:   0%|          | 0/196 [00:00<?, ?it/s, loss=3.3626, lr=0.000548]
+Training:  22%|██▏       | 44/196 [00:10<00:35,  4.33it/s, loss=3.3626, lr=0.000548]
+Training:  22%|██▏       | 44/196 [00:11<00:35,  4.33it/s, loss=3.4122, lr=0.000557]
+Training:  45%|████▍     | 88/196 [00:20<00:25,  4.30it/s, loss=3.4122, lr=0.000557]
+Training:  45%|████▍     | 88/196 [00:23<00:25,  4.30it/s, loss=3.4120, lr=0.000565]
+Training:  68%|██████▊   | 133/196 [00:30<00:14,  4.36it/s, loss=3.4120, lr=0.000565]
+Training:  68%|██████▊   | 133/196 [00:34<00:14,  4.36it/s, loss=3.4536, lr=0.000574]
+Training:  91%|█████████ | 178/196 [00:41<00:04,  4.30it/s, loss=3.4536, lr=0.000574]
+                                                                                     
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s]
+                                                 
+Epoch 17 | Time: 46s | T_Loss: 3.431 | V_Loss: 4.192 | BLEU: 3.81
+ >> Sample: <s>Last week, the Cuban Mother of the US Townership Comprehensive discussion of the country’s output.</s>ly.</s> of the hotter of the country’s property-rights habits
+ >> New Best! Saving to ./transformer_checkpoints/exp_128_layer_sinusoidal_512_8_6_2048_512_0.0005
+
+Training:   0%|          | 0/196 [00:00<?, ?it/s]
+Training:   0%|          | 0/196 [00:00<?, ?it/s, loss=3.3438, lr=0.000582]
+Training:  22%|██▏       | 44/196 [00:10<00:35,  4.33it/s, loss=3.3438, lr=0.000582]
+Training:  22%|██▏       | 44/196 [00:11<00:35,  4.33it/s, loss=3.3618, lr=0.000591]
+Training:  45%|████▍     | 88/196 [00:20<00:25,  4.28it/s, loss=3.3618, lr=0.000591]
+Training:  45%|████▍     | 88/196 [00:23<00:25,  4.28it/s, loss=3.3291, lr=0.000600]
+Training:  67%|██████▋   | 131/196 [00:30<00:15,  4.23it/s, loss=3.3291, lr=0.000600]
+Training:  67%|██████▋   | 131/196 [00:35<00:15,  4.23it/s, loss=3.3879, lr=0.000608]
+Training:  88%|████████▊ | 173/196 [00:41<00:05,  4.17it/s, loss=3.3879, lr=0.000608]
+                                                                                     
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s]
+                                                 
+Epoch 18 | Time: 47s | T_Loss: 3.357 | V_Loss: 4.117 | BLEU: 3.81
+ >> Sample: <s>Last week, the Cuban Homey’s Home Antibi, the intentional triggering a brighter discussion about the country’s dramatic explosion of its output.</s> in the
+ >> New Best! Saving to ./transformer_checkpoints/exp_128_layer_sinusoidal_512_8_6_2048_512_0.0005
+
+Training:   0%|          | 0/196 [00:00<?, ?it/s]
+Training:   0%|          | 0/196 [00:00<?, ?it/s, loss=3.3166, lr=0.000616]
+Training:  21%|██▏       | 42/196 [00:10<00:37,  4.13it/s, loss=3.3166, lr=0.000616]
+Training:  21%|██▏       | 42/196 [00:12<00:37,  4.13it/s, loss=3.2549, lr=0.000625]
+Training:  43%|████▎     | 84/196 [00:21<00:28,  3.97it/s, loss=3.2549, lr=0.000625]
+Training:  43%|████▎     | 84/196 [00:25<00:28,  3.97it/s, loss=3.2784, lr=0.000634]
+Training:  43%|████▎     | 84/196 [00:31<00:28,  3.97it/s, loss=3.2784, lr=0.000634]
+Training:  64%|██████▍   | 126/196 [00:31<00:17,  4.05it/s, loss=3.2784, lr=0.000634]
+Training:  64%|██████▍   | 126/196 [00:37<00:17,  4.05it/s, loss=3.2852, lr=0.000643]
+Training:  86%|████████▌ | 169/196 [00:41<00:06,  4.13it/s, loss=3.2852, lr=0.000643]
+                                                                                     
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s]
+                                                 
+Epoch 19 | Time: 48s | T_Loss: 3.292 | V_Loss: 4.067 | BLEU: 3.81
+ >> Sample: <s>Last week, the Cuba Timor of American private bacteria has been a temporary halt to the harsh discussion of the housing-rate hikes of the country.</s>ly, the US and the
+
+Training:   0%|          | 0/196 [00:00<?, ?it/s]
+Training:   0%|          | 0/196 [00:00<?, ?it/s, loss=3.2026, lr=0.000651]
+Training:  21%|██▏       | 42/196 [00:10<00:37,  4.12it/s, loss=3.2026, lr=0.000651]
+Training:  21%|██▏       | 42/196 [00:12<00:37,  4.12it/s, loss=3.2323, lr=0.000659]
+Training:  43%|████▎     | 84/196 [00:20<00:27,  4.09it/s, loss=3.2323, lr=0.000659]
+Training:  43%|████▎     | 84/196 [00:24<00:27,  4.09it/s, loss=3.2462, lr=0.000668]
+Training:  64%|██████▍   | 125/196 [00:30<00:17,  4.06it/s, loss=3.2462, lr=0.000668]
+Training:  64%|██████▍   | 125/196 [00:37<00:17,  4.06it/s, loss=3.2289, lr=0.000677]
+Training:  85%|████████▍ | 166/196 [00:40<00:07,  4.07it/s, loss=3.2289, lr=0.000677]
+                                                                                     
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s]
+                                                 
+Epoch 20 | Time: 49s | T_Loss: 3.234 | V_Loss: 4.014 | BLEU: 3.79
+ >> Sample: <s>Last week, the gold-up call on American private housing, and surprisingly triggered a stark discussion about the false flags of the country’s property trafficking.</s>, the US and
+
+Training:   0%|          | 0/196 [00:00<?, ?it/s]
+Training:   0%|          | 0/196 [00:00<?, ?it/s, loss=3.1220, lr=0.000685]
+Training:  21%|██        | 41/196 [00:10<00:37,  4.09it/s, loss=3.1220, lr=0.000685]
+Training:  21%|██        | 41/196 [00:12<00:37,  4.09it/s, loss=3.1765, lr=0.000694]
+Training:  42%|████▏     | 82/196 [00:20<00:28,  4.02it/s, loss=3.1765, lr=0.000694]
+Training:  42%|████▏     | 82/196 [00:24<00:28,  4.02it/s, loss=3.2127, lr=0.000697]
+Training:  63%|██████▎   | 123/196 [00:30<00:18,  4.05it/s, loss=3.2127, lr=0.000697]
+Training:  63%|██████▎   | 123/196 [00:38<00:18,  4.05it/s, loss=3.2014, lr=0.000693]
+Training:  84%|████████▎ | 164/196 [00:41<00:08,  3.95it/s, loss=3.2014, lr=0.000693]
+                                                                                     
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s]
+                                                 
+Epoch 21 | Time: 50s | T_Loss: 3.180 | V_Loss: 3.984 | BLEU: 4.93
+ >> Sample: <s>Last week, the climbing of the Cupreme Homey, the egregious discussions about the dramatic contraction of the country’s property rate.</s> of the US and Home Jong-
+ >> New Best! Saving to ./transformer_checkpoints/exp_128_layer_sinusoidal_512_8_6_2048_512_0.0005
+
+Training:   0%|          | 0/196 [00:00<?, ?it/s]
+Training:   0%|          | 0/196 [00:00<?, ?it/s, loss=3.0823, lr=0.000689]
+Training:  20%|█▉        | 39/196 [00:10<00:40,  3.87it/s, loss=3.0823, lr=0.000689]
+Training:  20%|█▉        | 39/196 [00:13<00:40,  3.87it/s, loss=3.1281, lr=0.000685]
+Training:  41%|████      | 80/196 [00:20<00:29,  3.96it/s, loss=3.1281, lr=0.000685]
+Training:  41%|████      | 80/196 [00:25<00:29,  3.96it/s, loss=3.0874, lr=0.000681]
+Training:  62%|██████▏   | 121/196 [00:30<00:18,  3.98it/s, loss=3.0874, lr=0.000681]
+Training:  62%|██████▏   | 121/196 [00:37<00:18,  3.98it/s, loss=3.1353, lr=0.000677]
+Training:  83%|████████▎ | 162/196 [00:40<00:08,  4.01it/s, loss=3.1353, lr=0.000677]
+                                                                                     
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s]
+                                                 
+Epoch 22 | Time: 50s | T_Loss: 3.124 | V_Loss: 3.948 | BLEU: 4.41
+ >> Sample: <s>Last week, the Cuban Homey Timor to the US and Homey, unexpectedly triggered a harsh discussion about the country’s dramatic abuse of national output.</s>ly
+
+Training:   0%|          | 0/196 [00:00<?, ?it/s]
+Training:   0%|          | 0/196 [00:00<?, ?it/s, loss=3.0538, lr=0.000673]
+Training:  21%|██        | 41/196 [00:10<00:38,  4.00it/s, loss=3.0538, lr=0.000673]
+Training:  21%|██        | 41/196 [00:12<00:38,  4.00it/s, loss=3.0523, lr=0.000669]
+Training:  42%|████▏     | 83/196 [00:20<00:27,  4.07it/s, loss=3.0523, lr=0.000669]
+Training:  42%|████▏     | 83/196 [00:25<00:27,  4.07it/s, loss=3.1071, lr=0.000665]
+Training:  64%|██████▍   | 125/196 [00:30<00:17,  4.04it/s, loss=3.1071, lr=0.000665]
+Training:  64%|██████▍   | 125/196 [00:37<00:17,  4.04it/s, loss=3.0747, lr=0.000662]
+Training:  85%|████████▌ | 167/196 [00:41<00:07,  4.09it/s, loss=3.0747, lr=0.000662]
+                                                                                     
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s]
+                                                 
+Epoch 23 | Time: 49s | T_Loss: 3.070 | V_Loss: 3.914 | BLEU: 4.88
+ >> Sample: <s>Last week, the glooming phase of the Cuban Meet of American Homey, triggered a vicious discussion about the false flags of the country’s property.</s>
+
+Training:   0%|          | 0/196 [00:00<?, ?it/s]
+Training:   0%|          | 0/196 [00:00<?, ?it/s, loss=3.0208, lr=0.000658]
+Training:  21%|██        | 41/196 [00:10<00:38,  4.03it/s, loss=3.0208, lr=0.000658]
+Training:  21%|██        | 41/196 [00:12<00:38,  4.03it/s, loss=3.0235, lr=0.000655]
+Training:  42%|████▏     | 82/196 [00:20<00:28,  4.06it/s, loss=3.0235, lr=0.000655]
+Training:  42%|████▏     | 82/196 [00:24<00:28,  4.06it/s, loss=3.0153, lr=0.000651]
+Training:  64%|██████▍   | 125/196 [00:30<00:17,  4.13it/s, loss=3.0153, lr=0.000651]
+Training:  64%|██████▍   | 125/196 [00:36<00:17,  4.13it/s, loss=3.0708, lr=0.000647]
+Training:  86%|████████▌ | 168/196 [00:40<00:06,  4.20it/s, loss=3.0708, lr=0.000647]
+                                                                                     
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s]
+                                                 
+Epoch 24 | Time: 48s | T_Loss: 3.022 | V_Loss: 3.887 | BLEU: 5.37
+ >> Sample: <s>Last week, the cheapesto-American Home Apple sought temporarily, intentionally triggering a hotter discussion about the country’s dramatic abuse.</s> of the US and the
+ >> New Best! Saving to ./transformer_checkpoints/exp_128_layer_sinusoidal_512_8_6_2048_512_0.0005
+
+Training:   0%|          | 0/196 [00:00<?, ?it/s]
+Training:   0%|          | 0/196 [00:00<?, ?it/s, loss=2.9448, lr=0.000644]
+Training:  21%|██▏       | 42/196 [00:10<00:37,  4.12it/s, loss=2.9448, lr=0.000644]
+Training:  21%|██▏       | 42/196 [00:12<00:37,  4.12it/s, loss=2.9639, lr=0.000641]
+Training:  43%|████▎     | 85/196 [00:20<00:26,  4.19it/s, loss=2.9639, lr=0.000641]
+Training:  43%|████▎     | 85/196 [00:24<00:26,  4.19it/s, loss=2.9556, lr=0.000638]
+Training:  65%|██████▌   | 128/196 [00:30<00:16,  4.21it/s, loss=2.9556, lr=0.000638]
+Training:  65%|██████▌   | 128/196 [00:35<00:16,  4.21it/s, loss=2.9835, lr=0.000634]
+Training:  87%|████████▋ | 171/196 [00:40<00:05,  4.19it/s, loss=2.9835, lr=0.000634]
+                                                                                     
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s]
+                                                 
+Epoch 25 | Time: 47s | T_Loss: 2.978 | V_Loss: 3.870 | BLEU: 5.52
+ >> Sample: <s>Last week, the timid “American Home” temporarily stopped, unintended raises hot discussions about the country’s sharp-seated sexualization rate.</s> of the US and the
+ >> New Best! Saving to ./transformer_checkpoints/exp_128_layer_sinusoidal_512_8_6_2048_512_0.0005
+
+Training:   0%|          | 0/196 [00:00<?, ?it/s]
+Training:   0%|          | 0/196 [00:00<?, ?it/s, loss=2.9048, lr=0.000631]
+Training:  21%|██        | 41/196 [00:10<00:38,  4.03it/s, loss=2.9048, lr=0.000631]
+Training:  21%|██        | 41/196 [00:12<00:38,  4.03it/s, loss=2.9613, lr=0.000628]
+Training:  42%|████▏     | 82/196 [00:20<00:28,  3.99it/s, loss=2.9613, lr=0.000628]
+Training:  42%|████▏     | 82/196 [00:25<00:28,  3.99it/s, loss=2.8984, lr=0.000625]
+Training:  62%|██████▏   | 122/196 [00:30<00:18,  3.97it/s, loss=2.8984, lr=0.000625]
+Training:  62%|██████▏   | 122/196 [00:38<00:18,  3.97it/s, loss=2.8987, lr=0.000622]
+Training:  83%|████████▎ | 162/196 [00:41<00:08,  3.86it/s, loss=2.8987, lr=0.000622]
+                                                                                     
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s]
+                                                 
+Epoch 26 | Time: 51s | T_Loss: 2.938 | V_Loss: 3.844 | BLEU: 5.18
+ >> Sample: <s>Last week, the groomy of the Home of the US, the Ministry of Home, deliberately triggered a hotter discussion of the country’s sharp-purchase tra
+
+Training:   0%|          | 0/196 [00:00<?, ?it/s]
+Training:   0%|          | 0/196 [00:00<?, ?it/s, loss=2.8669, lr=0.000619]
+Training:  21%|██▏       | 42/196 [00:10<00:37,  4.13it/s, loss=2.8669, lr=0.000619]
+Training:  21%|██▏       | 42/196 [00:12<00:37,  4.13it/s, loss=2.8800, lr=0.000616]
+Training:  43%|████▎     | 85/196 [00:20<00:26,  4.18it/s, loss=2.8800, lr=0.000616]
+Training:  43%|████▎     | 85/196 [00:23<00:26,  4.18it/s, loss=2.8961, lr=0.000613]
+Training:  65%|██████▌   | 128/196 [00:30<00:16,  4.19it/s, loss=2.8961, lr=0.000613]
+Training:  65%|██████▌   | 128/196 [00:36<00:16,  4.19it/s, loss=2.9854, lr=0.000610]
+Training:  87%|████████▋ | 171/196 [00:40<00:05,  4.18it/s, loss=2.9854, lr=0.000610]
+                                                                                     
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s]
+                                                 
+Epoch 27 | Time: 48s | T_Loss: 2.901 | V_Loss: 3.798 | BLEU: 5.58
+ >> Sample: <s>Last week, the garment of the Anthropocene “American Home” suspended a hotter discussion of the false flags of national output.</s> and the US, the Minist
+ >> New Best! Saving to ./transformer_checkpoints/exp_128_layer_sinusoidal_512_8_6_2048_512_0.0005
+
+Training:   0%|          | 0/196 [00:00<?, ?it/s]
+Training:   0%|          | 0/196 [00:00<?, ?it/s, loss=2.8507, lr=0.000607]
+Training:  21%|██        | 41/196 [00:10<00:38,  4.06it/s, loss=2.8507, lr=0.000607]
+Training:  21%|██        | 41/196 [00:12<00:38,  4.06it/s, loss=2.8481, lr=0.000605]
+Training:  42%|████▏     | 82/196 [00:20<00:28,  3.98it/s, loss=2.8481, lr=0.000605]
+Training:  42%|████▏     | 82/196 [00:25<00:28,  3.98it/s, loss=2.8449, lr=0.000602]
+Training:  62%|██████▏   | 122/196 [00:30<00:18,  3.98it/s, loss=2.8449, lr=0.000602]
+Training:  62%|██████▏   | 122/196 [00:37<00:18,  3.98it/s, loss=2.9001, lr=0.000599]
+Training:  83%|████████▎ | 163/196 [00:40<00:08,  4.03it/s, loss=2.9001, lr=0.000599]
+                                                                                     
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s]
+                                                 
+Epoch 28 | Time: 49s | T_Loss: 2.869 | V_Loss: 3.789 | BLEU: 5.73
+ >> Sample: <s>Last week, the ghost of the American Housing Apport, the intentional suspension of the hypothesis that triggered a false discussion about the country’s property-r
+ >> New Best! Saving to ./transformer_checkpoints/exp_128_layer_sinusoidal_512_8_6_2048_512_0.0005
+
+Training:   0%|          | 0/196 [00:00<?, ?it/s]
+Training:   0%|          | 0/196 [00:00<?, ?it/s, loss=2.8058, lr=0.000597]
+Training:  20%|██        | 40/196 [00:10<00:39,  3.96it/s, loss=2.8058, lr=0.000597]
+Training:  20%|██        | 40/196 [00:12<00:39,  3.96it/s, loss=2.8300, lr=0.000594]
+Training:  41%|████▏     | 81/196 [00:20<00:28,  4.02it/s, loss=2.8300, lr=0.000594]
+Training:  41%|████▏     | 81/196 [00:25<00:28,  4.02it/s, loss=2.8392, lr=0.000591]
+Training:  62%|██████▏   | 122/196 [00:30<00:18,  4.01it/s, loss=2.8392, lr=0.000591]
+Training:  62%|██████▏   | 122/196 [00:37<00:18,  4.01it/s, loss=2.8498, lr=0.000589]
+Training:  84%|████████▎ | 164/196 [00:40<00:07,  4.07it/s, loss=2.8498, lr=0.000589]
+                                                                                     
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s]
+                                                 
+Epoch 29 | Time: 49s | T_Loss: 2.837 | V_Loss: 3.788 | BLEU: 5.65
+ >> Sample: <s>Last week, the ancient American Homey suspended temporary suspension, triggering a hotly discussion about the sharpest-value appreciation of national output.</s>-handed homes
+
+Training:   0%|          | 0/196 [00:00<?, ?it/s]
+Training:   0%|          | 0/196 [00:00<?, ?it/s, loss=2.7803, lr=0.000586]
+Training:  22%|██▏       | 44/196 [00:10<00:35,  4.32it/s, loss=2.7803, lr=0.000586]
+Training:  22%|██▏       | 44/196 [00:11<00:35,  4.32it/s, loss=2.7718, lr=0.000584]
+Training:  45%|████▍     | 88/196 [00:20<00:25,  4.31it/s, loss=2.7718, lr=0.000584]
+Training:  45%|████▍     | 88/196 [00:23<00:25,  4.31it/s, loss=2.8286, lr=0.000581]
+Training:  67%|██████▋   | 132/196 [00:30<00:15,  4.25it/s, loss=2.8286, lr=0.000581]
+Training:  67%|██████▋   | 132/196 [00:35<00:15,  4.25it/s, loss=2.8653, lr=0.000579]
+Training:  89%|████████▉ | 174/196 [00:41<00:05,  4.10it/s, loss=2.8653, lr=0.000579]
+                                                                                     
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s]
+                                                 
+Epoch 30 | Time: 48s | T_Loss: 2.809 | V_Loss: 3.757 | BLEU: 5.77
+ >> Sample: <s>Last week, the garment of the Appeals’ Homey Museum temporarily stopped the timing of the US, triggered a fierce discussion about the sharp appreciation of
+ >> New Best! Saving to ./transformer_checkpoints/exp_128_layer_sinusoidal_512_8_6_2048_512_0.0005
+
+Training:   0%|          | 0/196 [00:00<?, ?it/s]
+Training:   0%|          | 0/196 [00:00<?, ?it/s, loss=2.7403, lr=0.000576]
+Training:  21%|██▏       | 42/196 [00:10<00:36,  4.19it/s, loss=2.7403, lr=0.000576]
+Training:  21%|██▏       | 42/196 [00:12<00:36,  4.19it/s, loss=2.7614, lr=0.000574]
+Training:  43%|████▎     | 84/196 [00:20<00:27,  4.07it/s, loss=2.7614, lr=0.000574]
+Training:  43%|████▎     | 84/196 [00:24<00:27,  4.07it/s, loss=2.7874, lr=0.000571]
+Training:  64%|██████▍   | 125/196 [00:30<00:17,  4.03it/s, loss=2.7874, lr=0.000571]
+Training:  64%|██████▍   | 125/196 [00:37<00:17,  4.03it/s, loss=2.7791, lr=0.000569]
+Training:  84%|████████▍ | 165/196 [00:40<00:07,  4.00it/s, loss=2.7791, lr=0.000569]
+                                                                                     
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s]
+                                                 
+Epoch 31 | Time: 49s | T_Loss: 2.782 | V_Loss: 3.751 | BLEU: 5.83
+ >> Sample: <s>Last week, the garment of the garment “American Homeback” was suspended, triggering a fierce discussion about the country’s dramatic contest for the falsehood.</s>
+ >> New Best! Saving to ./transformer_checkpoints/exp_128_layer_sinusoidal_512_8_6_2048_512_0.0005
+
+Training:   0%|          | 0/196 [00:00<?, ?it/s]
+Training:   0%|          | 0/196 [00:00<?, ?it/s, loss=2.7112, lr=0.000567]
+Training:  21%|██        | 41/196 [00:10<00:38,  4.02it/s, loss=2.7112, lr=0.000567]
+Training:  21%|██        | 41/196 [00:12<00:38,  4.02it/s, loss=2.7715, lr=0.000565]
+Training:  42%|████▏     | 83/196 [00:20<00:27,  4.07it/s, loss=2.7715, lr=0.000565]
+Training:  42%|████▏     | 83/196 [00:24<00:27,  4.07it/s, loss=2.7232, lr=0.000562]
+Training:  64%|██████▍   | 126/196 [00:30<00:16,  4.14it/s, loss=2.7232, lr=0.000562]
+Training:  64%|██████▍   | 126/196 [00:36<00:16,  4.14it/s, loss=2.7796, lr=0.000560]
+Training:  86%|████████▌ | 169/196 [00:41<00:06,  4.13it/s, loss=2.7796, lr=0.000560]
+                                                                                     
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s]
+                                                 
+Epoch 32 | Time: 49s | T_Loss: 2.757 | V_Loss: 3.759 | BLEU: 5.60
+ >> Sample: <s>Last week, the garment of the ancient “American Homey Apport, deliberately triggered a fervicious discussion about the falsehood of a country’s sharp yield.
+
+Training:   0%|          | 0/196 [00:00<?, ?it/s]
+Training:   0%|          | 0/196 [00:00<?, ?it/s, loss=2.7097, lr=0.000558]
+Training:  20%|██        | 40/196 [00:10<00:39,  4.00it/s, loss=2.7097, lr=0.000558]
+Training:  20%|██        | 40/196 [00:12<00:39,  4.00it/s, loss=2.7373, lr=0.000556]
+Training:  41%|████▏     | 81/196 [00:20<00:28,  4.03it/s, loss=2.7373, lr=0.000556]
+Training:  41%|████▏     | 81/196 [00:25<00:28,  4.03it/s, loss=2.7054, lr=0.000554]
+Training:  62%|██████▏   | 122/196 [00:30<00:18,  4.03it/s, loss=2.7054, lr=0.000554]
+Training:  62%|██████▏   | 122/196 [00:37<00:18,  4.03it/s, loss=2.7371, lr=0.000551]
+Training:  84%|████████▍ | 165/196 [00:40<00:07,  4.13it/s, loss=2.7371, lr=0.000551]
+                                                                                     
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s]
+                                                 
+Epoch 33 | Time: 49s | T_Loss: 2.733 | V_Loss: 3.720 | BLEU: 6.08
+ >> Sample: <s>Last week, the garment moonerous “American Home Fannie” delivered intense discussion of false flags about the country’s sharp-match ratios.</s> in
+ >> New Best! Saving to ./transformer_checkpoints/exp_128_layer_sinusoidal_512_8_6_2048_512_0.0005
+
+Training:   0%|          | 0/196 [00:00<?, ?it/s]
+Training:   0%|          | 0/196 [00:00<?, ?it/s, loss=2.7434, lr=0.000549]
+Training:  20%|█▉        | 39/196 [00:10<00:40,  3.88it/s, loss=2.7434, lr=0.000549]
+Training:  20%|█▉        | 39/196 [00:13<00:40,  3.88it/s, loss=2.6998, lr=0.000547]
+Training:  40%|████      | 79/196 [00:20<00:29,  3.94it/s, loss=2.6998, lr=0.000547]
+Training:  40%|████      | 79/196 [00:25<00:29,  3.94it/s, loss=2.7285, lr=0.000545]
+Training:  61%|██████    | 120/196 [00:30<00:18,  4.01it/s, loss=2.7285, lr=0.000545]
+Training:  61%|██████    | 120/196 [00:37<00:18,  4.01it/s, loss=2.7085, lr=0.000543]
+Training:  83%|████████▎ | 162/196 [00:40<00:08,  4.06it/s, loss=2.7085, lr=0.000543]
+                                                                                     
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s]
+                                                 
+Epoch 34 | Time: 49s | T_Loss: 2.711 | V_Loss: 3.721 | BLEU: 5.79
+ >> Sample: <s>Last week, the temporary ceasefire of the garment “American Home Foods,” deliberately triggered a fierce discussion about the country’s sharp-section rate.</s>,
+
+Training:   0%|          | 0/196 [00:00<?, ?it/s]
+Training:   0%|          | 0/196 [00:00<?, ?it/s, loss=2.6357, lr=0.000541]
+Training:  21%|██        | 41/196 [00:10<00:38,  4.02it/s, loss=2.6357, lr=0.000541]
+Training:  21%|██        | 41/196 [00:12<00:38,  4.02it/s, loss=2.6991, lr=0.000539]
+Training:  42%|████▏     | 83/196 [00:20<00:27,  4.06it/s, loss=2.6991, lr=0.000539]
+Training:  42%|████▏     | 83/196 [00:25<00:27,  4.06it/s, loss=2.6718, lr=0.000537]
+Training:  63%|██████▎   | 124/196 [00:30<00:17,  4.02it/s, loss=2.6718, lr=0.000537]
+Training:  63%|██████▎   | 124/196 [00:37<00:17,  4.02it/s, loss=2.7488, lr=0.000535]
+Training:  84%|████████▍ | 165/196 [00:40<00:07,  4.04it/s, loss=2.7488, lr=0.000535]
+                                                                                     
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s]
+                                                 
+Epoch 35 | Time: 49s | T_Loss: 2.690 | V_Loss: 3.725 | BLEU: 5.94
+ >> Sample: <s>Last week, the timing of the garment “American Home A” documented temporary stopping, unintendedly triggering a false discussion about the sharp-moving
+
+Training:   0%|          | 0/196 [00:00<?, ?it/s]
+Training:   0%|          | 0/196 [00:00<?, ?it/s, loss=2.6241, lr=0.000534]
+Training:  21%|██        | 41/196 [00:10<00:38,  4.04it/s, loss=2.6241, lr=0.000534]
+Training:  21%|██        | 41/196 [00:12<00:38,  4.04it/s, loss=2.6327, lr=0.000532]
+Training:  42%|████▏     | 82/196 [00:20<00:28,  4.01it/s, loss=2.6327, lr=0.000532]
+Training:  42%|████▏     | 82/196 [00:25<00:28,  4.01it/s, loss=2.6936, lr=0.000530]
+Training:  63%|██████▎   | 123/196 [00:30<00:18,  4.05it/s, loss=2.6936, lr=0.000530]
+Training:  63%|██████▎   | 123/196 [00:37<00:18,  4.05it/s, loss=2.6653, lr=0.000528]
+Training:  84%|████████▎ | 164/196 [00:40<00:08,  4.00it/s, loss=2.6653, lr=0.000528]
+                                                                                     
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s]
+                                                 
+Epoch 36 | Time: 50s | T_Loss: 2.669 | V_Loss: 3.720 | BLEU: 5.77
+ >> Sample: <s>Last week, the garment mooning “American Home” sold a temporary ceasefire, unexpectedly triggered a fierce discussion about the false description of
+
+Training:   0%|          | 0/196 [00:00<?, ?it/s]
+Training:   0%|          | 0/196 [00:00<?, ?it/s, loss=2.5992, lr=0.000526]
+Training:  20%|██        | 40/196 [00:10<00:39,  3.95it/s, loss=2.5992, lr=0.000526]
+Training:  20%|██        | 40/196 [00:13<00:39,  3.95it/s, loss=2.6795, lr=0.000524]
+Training:  41%|████      | 80/196 [00:20<00:29,  3.93it/s, loss=2.6795, lr=0.000524]
+Training:  41%|████      | 80/196 [00:25<00:29,  3.93it/s, loss=2.6717, lr=0.000522]
+Training:  62%|██████▏   | 122/196 [00:30<00:18,  4.02it/s, loss=2.6717, lr=0.000522]
+Training:  62%|██████▏   | 122/196 [00:37<00:18,  4.02it/s, loss=2.6912, lr=0.000521]
+Training:  84%|████████▎ | 164/196 [00:41<00:08,  4.00it/s, loss=2.6912, lr=0.000521]
+                                                                                     
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s]
+                                                 
+Epoch 37 | Time: 50s | T_Loss: 2.650 | V_Loss: 3.718 | BLEU: 6.11
+ >> Sample: <s>Last week, the garbing moon swept the temporary spoil of the American Home Antibius, unexpectedly triggered a false discussion of the country’s
+ >> New Best! Saving to ./transformer_checkpoints/exp_128_layer_sinusoidal_512_8_6_2048_512_0.0005
+
+Training:   0%|          | 0/196 [00:00<?, ?it/s]
+Training:   0%|          | 0/196 [00:00<?, ?it/s, loss=2.5601, lr=0.000519]
+Training:  21%|██        | 41/196 [00:10<00:38,  4.05it/s, loss=2.5601, lr=0.000519]
+Training:  21%|██        | 41/196 [00:12<00:38,  4.05it/s, loss=2.5964, lr=0.000517]
+Training:  42%|████▏     | 82/196 [00:20<00:28,  3.96it/s, loss=2.5964, lr=0.000517]
+Training:  42%|████▏     | 82/196 [00:25<00:28,  3.96it/s, loss=2.6143, lr=0.000515]
+Training:  63%|██████▎   | 123/196 [00:30<00:18,  4.02it/s, loss=2.6143, lr=0.000515]
+Training:  63%|██████▎   | 123/196 [00:37<00:18,  4.02it/s, loss=2.6707, lr=0.000514]
+Training:  84%|████████▎ | 164/196 [00:40<00:07,  4.03it/s, loss=2.6707, lr=0.000514]
+                                                                                     
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s]
+                                                 
+Epoch 38 | Time: 49s | T_Loss: 2.631 | V_Loss: 3.701 | BLEU: 5.83
+ >> Sample: <s>Last week, the garment moon slogan “American Home” sowed temporary stopping, unintended to trigger false discussions about the country’s sharp-motional
+
+Training:   0%|          | 0/196 [00:00<?, ?it/s]
+Training:   0%|          | 0/196 [00:00<?, ?it/s, loss=2.5819, lr=0.000512]
+Training:  20%|██        | 40/196 [00:10<00:39,  3.99it/s, loss=2.5819, lr=0.000512]
+Training:  20%|██        | 40/196 [00:12<00:39,  3.99it/s, loss=2.5935, lr=0.000510]
+Training:  41%|████▏     | 81/196 [00:20<00:28,  4.03it/s, loss=2.5935, lr=0.000510]
+Training:  41%|████▏     | 81/196 [00:24<00:28,  4.03it/s, loss=2.6529, lr=0.000509]
+Training:  63%|██████▎   | 123/196 [00:30<00:17,  4.10it/s, loss=2.6529, lr=0.000509]
+Training:  63%|██████▎   | 123/196 [00:37<00:17,  4.10it/s, loss=2.6990, lr=0.000507]
+Training:  84%|████████▍ | 165/196 [00:40<00:07,  4.06it/s, loss=2.6990, lr=0.000507]
+                                                                                     
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s]
+                                                 
+Epoch 39 | Time: 49s | T_Loss: 2.614 | V_Loss: 3.707 | BLEU: 6.10
+ >> Sample: <s>Last week, the garmentous “Mouse Aport” temporarily stopped, triggering a fierce discussion about the false flags of the country’s plastics.</s>
+
+Training:   0%|          | 0/196 [00:00<?, ?it/s]
+Training:   0%|          | 0/196 [00:00<?, ?it/s, loss=2.5287, lr=0.000505]
+Training:  20%|██        | 40/196 [00:10<00:39,  3.99it/s, loss=2.5287, lr=0.000505]
+Training:  20%|██        | 40/196 [00:12<00:39,  3.99it/s, loss=2.5717, lr=0.000504]
+Training:  41%|████▏     | 81/196 [00:20<00:28,  4.03it/s, loss=2.5717, lr=0.000504]
+Training:  41%|████▏     | 81/196 [00:25<00:28,  4.03it/s, loss=2.5748, lr=0.000502]
+Training:  62%|██████▏   | 122/196 [00:30<00:18,  4.01it/s, loss=2.5748, lr=0.000502]
+Training:  62%|██████▏   | 122/196 [00:37<00:18,  4.01it/s, loss=2.5832, lr=0.000501]
+Training:  84%|████████▎ | 164/196 [00:40<00:07,  4.06it/s, loss=2.5832, lr=0.000501]
+                                                                                     
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s]
+                                                 
+Epoch 40 | Time: 49s | T_Loss: 2.597 | V_Loss: 3.715 | BLEU: 5.42
+ >> Sample: <s>Last week, the garment “American Home A” temporarily stopped, triggering a false debate about the country’s dramatic absorbation rate.</s> by the US and the US, the
+
+Training:   0%|          | 0/196 [00:00<?, ?it/s]
+Training:   0%|          | 0/196 [00:00<?, ?it/s, loss=2.5451, lr=0.000499]
+Training:  20%|██        | 40/196 [00:10<00:39,  3.95it/s, loss=2.5451, lr=0.000499]
+Training:  20%|██        | 40/196 [00:12<00:39,  3.95it/s, loss=2.5419, lr=0.000498]
+Training:  42%|████▏     | 83/196 [00:20<00:27,  4.15it/s, loss=2.5419, lr=0.000498]
+Training:  42%|████▏     | 83/196 [00:24<00:27,  4.15it/s, loss=2.5767, lr=0.000496]
+Training:  64%|██████▍   | 126/196 [00:31<00:17,  4.02it/s, loss=2.5767, lr=0.000496]
+Training:  64%|██████▍   | 126/196 [00:37<00:17,  4.02it/s, loss=2.6424, lr=0.000494]
+Training:  84%|████████▍ | 165/196 [00:41<00:07,  3.97it/s, loss=2.6424, lr=0.000494]
+                                                                                     
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s]
+                                                 
+Epoch 41 | Time: 49s | T_Loss: 2.581 | V_Loss: 3.694 | BLEU: 5.93
+ >> Sample: <s>Last week, the garmented “American Home” sowed a temporary ceasefire, unexpectedly triggered a fierce discussion of falsehoods about the country’s dram
+
+Training:   0%|          | 0/196 [00:00<?, ?it/s]
+Training:   0%|          | 0/196 [00:00<?, ?it/s, loss=2.5506, lr=0.000493]
+Training:  21%|██        | 41/196 [00:10<00:38,  4.02it/s, loss=2.5506, lr=0.000493]
+Training:  21%|██        | 41/196 [00:12<00:38,  4.02it/s, loss=2.5458, lr=0.000491]
+Training:  42%|████▏     | 82/196 [00:20<00:28,  4.06it/s, loss=2.5458, lr=0.000491]
+Training:  42%|████▏     | 82/196 [00:24<00:28,  4.06it/s, loss=2.5542, lr=0.000490]
+Training:  63%|██████▎   | 124/196 [00:30<00:17,  4.11it/s, loss=2.5542, lr=0.000490]
+Training:  63%|██████▎   | 124/196 [00:37<00:17,  4.11it/s, loss=2.5655, lr=0.000488]
+Training:  85%|████████▍ | 166/196 [00:41<00:07,  4.03it/s, loss=2.5655, lr=0.000488]
+                                                                                     
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s]
+                                                 
+Epoch 42 | Time: 49s | T_Loss: 2.566 | V_Loss: 3.688 | BLEU: 5.94
+ >> Sample: <s>Last week, the garment’s “American Home” temporarily stopped sending a tipping point, unintendedly triggering a hot debate about the country’s dramatic evasion.
+
+Training:   0%|          | 0/196 [00:00<?, ?it/s]
+Training:   0%|          | 0/196 [00:00<?, ?it/s, loss=2.5037, lr=0.000487]
+Training:  22%|██▏       | 43/196 [00:10<00:36,  4.24it/s, loss=2.5037, lr=0.000487]
+Training:  22%|██▏       | 43/196 [00:11<00:36,  4.24it/s, loss=2.5567, lr=0.000486]
+Training:  44%|████▍     | 86/196 [00:20<00:26,  4.18it/s, loss=2.5567, lr=0.000486]
+Training:  44%|████▍     | 86/196 [00:24<00:26,  4.18it/s, loss=2.5745, lr=0.000484]
+Training:  65%|██████▌   | 128/196 [00:31<00:16,  4.09it/s, loss=2.5745, lr=0.000484]
+Training:  65%|██████▌   | 128/196 [00:36<00:16,  4.09it/s, loss=2.5644, lr=0.000483]
+Training:  87%|████████▋ | 170/196 [00:41<00:06,  4.13it/s, loss=2.5644, lr=0.000483]
+                                                                                     
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s]
+                                                 
+Epoch 43 | Time: 48s | T_Loss: 2.551 | V_Loss: 3.700 | BLEU: 5.96
+ >> Sample: <s>Last week, the garmentous “American Home” temporarily stopped sowing, triggering a hypothetical discussion of national dramatic evasion.</s>, the US government had a tem
+
+Training:   0%|          | 0/196 [00:00<?, ?it/s]
+Training:   0%|          | 0/196 [00:00<?, ?it/s, loss=2.5048, lr=0.000481]
+Training:  21%|██▏       | 42/196 [00:10<00:37,  4.14it/s, loss=2.5048, lr=0.000481]
+Training:  21%|██▏       | 42/196 [00:12<00:37,  4.14it/s, loss=2.5060, lr=0.000480]
+Training:  43%|████▎     | 85/196 [00:20<00:26,  4.21it/s, loss=2.5060, lr=0.000480]
+Training:  43%|████▎     | 85/196 [00:24<00:26,  4.21it/s, loss=2.5153, lr=0.000479]
+Training:  65%|██████▌   | 128/196 [00:30<00:16,  4.16it/s, loss=2.5153, lr=0.000479]
+Training:  65%|██████▌   | 128/196 [00:36<00:16,  4.16it/s, loss=2.5682, lr=0.000477]
+Training:  87%|████████▋ | 170/196 [00:41<00:06,  4.04it/s, loss=2.5682, lr=0.000477]
+                                                                                     
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s]
+                                                 
+Epoch 44 | Time: 49s | T_Loss: 2.535 | V_Loss: 3.704 | BLEU: 6.18
+ >> Sample: <s>Last week, the timing of the “American Home” temporary ceasement triggered a hot debate about the country’s dramatic harvesting rate.</s> in the US, the US, and the US
+ >> New Best! Saving to ./transformer_checkpoints/exp_128_layer_sinusoidal_512_8_6_2048_512_0.0005
+
+Training:   0%|          | 0/196 [00:00<?, ?it/s]
+Training:   0%|          | 0/196 [00:00<?, ?it/s, loss=2.4578, lr=0.000476]
+Training:  20%|██        | 40/196 [00:10<00:39,  3.94it/s, loss=2.4578, lr=0.000476]
+Training:  20%|██        | 40/196 [00:12<00:39,  3.94it/s, loss=2.5383, lr=0.000474]
+Training:  42%|████▏     | 82/196 [00:20<00:28,  4.04it/s, loss=2.5383, lr=0.000474]
+Training:  42%|████▏     | 82/196 [00:25<00:28,  4.04it/s, loss=2.5361, lr=0.000473]
+Training:  63%|██████▎   | 124/196 [00:30<00:17,  4.04it/s, loss=2.5361, lr=0.000473]
+Training:  63%|██████▎   | 124/196 [00:37<00:17,  4.04it/s, loss=2.5610, lr=0.000472]
+Training:  84%|████████▍ | 165/196 [00:41<00:07,  4.00it/s, loss=2.5610, lr=0.000472]
+                                                                                     
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s]
+                                                 
+Epoch 45 | Time: 49s | T_Loss: 2.521 | V_Loss: 3.708 | BLEU: 6.44
+ >> Sample: <s>Last week, the garment “American Home” temporarily stopped sowing, triggering a hotly discussion about the country’s dramatic yields.</s> and the US government’s t
+ >> New Best! Saving to ./transformer_checkpoints/exp_128_layer_sinusoidal_512_8_6_2048_512_0.0005
+
+Training:   0%|          | 0/196 [00:00<?, ?it/s]
+Training:   0%|          | 0/196 [00:00<?, ?it/s, loss=2.4480, lr=0.000471]
+Training:  22%|██▏       | 43/196 [00:10<00:36,  4.19it/s, loss=2.4480, lr=0.000471]
+Training:  22%|██▏       | 43/196 [00:12<00:36,  4.19it/s, loss=2.5051, lr=0.000469]
+Training:  43%|████▎     | 85/196 [00:20<00:27,  4.08it/s, loss=2.5051, lr=0.000469]
+Training:  43%|████▎     | 85/196 [00:24<00:27,  4.08it/s, loss=2.5063, lr=0.000468]
+Training:  64%|██████▍   | 126/196 [00:31<00:17,  3.98it/s, loss=2.5063, lr=0.000468]
+Training:  64%|██████▍   | 126/196 [00:37<00:17,  3.98it/s, loss=2.5198, lr=0.000467]
+Training:  85%|████████▍ | 166/196 [00:41<00:07,  3.96it/s, loss=2.5198, lr=0.000467]
+                                                                                     
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s]
+                                                 
+Epoch 46 | Time: 49s | T_Loss: 2.508 | V_Loss: 3.696 | BLEU: 5.96
+ >> Sample: <s>Last week, the garmented “American Homey” temporarily stopped sending, triggering a hotly discussion about the country’s dramatic absorbation rate.</s> and the US had
+
+Training:   0%|          | 0/196 [00:00<?, ?it/s]
+Training:   0%|          | 0/196 [00:00<?, ?it/s, loss=2.4582, lr=0.000465]
+Training:  20%|█▉        | 39/196 [00:10<00:40,  3.89it/s, loss=2.4582, lr=0.000465]
+Training:  20%|█▉        | 39/196 [00:12<00:40,  3.89it/s, loss=2.4918, lr=0.000464]
+Training:  41%|████▏     | 81/196 [00:20<00:28,  4.04it/s, loss=2.4918, lr=0.000464]
+Training:  41%|████▏     | 81/196 [00:24<00:28,  4.04it/s, loss=2.5340, lr=0.000463]
+Training:  63%|██████▎   | 123/196 [00:30<00:18,  4.04it/s, loss=2.5340, lr=0.000463]
+Training:  63%|██████▎   | 123/196 [00:37<00:18,  4.04it/s, loss=2.4952, lr=0.000462]
+Training:  84%|████████▍ | 165/196 [00:40<00:07,  4.09it/s, loss=2.4952, lr=0.000462]
+                                                                                     
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s]
+                                                 
+Epoch 47 | Time: 49s | T_Loss: 2.495 | V_Loss: 3.706 | BLEU: 6.16
+ >> Sample: <s>Last week, the ancient artillery “American Home” sowed temporary stage, triggering a fierce debate about the falsehoods of the country’s plastic harvest
+
+Training:   0%|          | 0/196 [00:00<?, ?it/s]
+Training:   0%|          | 0/196 [00:00<?, ?it/s, loss=2.4353, lr=0.000460]
+Training:  20%|█▉        | 39/196 [00:10<00:40,  3.87it/s, loss=2.4353, lr=0.000460]
+Training:  20%|█▉        | 39/196 [00:12<00:40,  3.87it/s, loss=2.4617, lr=0.000459]
+Training:  41%|████      | 80/196 [00:20<00:29,  3.97it/s, loss=2.4617, lr=0.000459]
+Training:  41%|████      | 80/196 [00:25<00:29,  3.97it/s, loss=2.4500, lr=0.000458]
+Training:  62%|██████▏   | 121/196 [00:30<00:19,  3.92it/s, loss=2.4500, lr=0.000458]
+Training:  62%|██████▏   | 121/196 [00:38<00:19,  3.92it/s, loss=2.4965, lr=0.000457]
+Training:  83%|████████▎ | 163/196 [00:40<00:08,  4.01it/s, loss=2.4965, lr=0.000457]
+                                                                                     
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s]
+                                                 
+Epoch 48 | Time: 50s | T_Loss: 2.483 | V_Loss: 3.695 | BLEU: 6.19
+ >> Sample: <s>Last week, the garmenting “American Home” temporarily stopped sending, triggering a hotly discussion of the country’s dramatic harvesting rate.</s> of the US-China
+
+Training:   0%|          | 0/196 [00:00<?, ?it/s]
+Training:   0%|          | 0/196 [00:00<?, ?it/s, loss=2.4209, lr=0.000456]
+Training:  21%|██▏       | 42/196 [00:10<00:37,  4.16it/s, loss=2.4209, lr=0.000456]
+Training:  21%|██▏       | 42/196 [00:12<00:37,  4.16it/s, loss=2.4365, lr=0.000454]
+Training:  43%|████▎     | 84/196 [00:20<00:27,  4.05it/s, loss=2.4365, lr=0.000454]
+Training:  43%|████▎     | 84/196 [00:24<00:27,  4.05it/s, loss=2.4751, lr=0.000453]
+Training:  64%|██████▍   | 125/196 [00:30<00:17,  4.07it/s, loss=2.4751, lr=0.000453]
+Training:  64%|██████▍   | 125/196 [00:37<00:17,  4.07it/s, loss=2.4737, lr=0.000452]
+Training:  85%|████████▍ | 166/196 [00:40<00:07,  4.07it/s, loss=2.4737, lr=0.000452]
+                                                                                     
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s]
+                                                 
+Epoch 49 | Time: 49s | T_Loss: 2.474 | V_Loss: 3.694 | BLEU: 5.70
+ >> Sample: <s>Last week, the garbing “American Home” sowed a temporary ceasefire, triggering a fierce discussion about the false flagship of national dramas.</s>,
+
+Training:   0%|          | 0/196 [00:00<?, ?it/s]
+Training:   0%|          | 0/196 [00:00<?, ?it/s, loss=2.4099, lr=0.000451]
+Training:  21%|██▏       | 42/196 [00:10<00:37,  4.14it/s, loss=2.4099, lr=0.000451]
+Training:  21%|██▏       | 42/196 [00:12<00:37,  4.14it/s, loss=2.4609, lr=0.000450]
+Training:  43%|████▎     | 84/196 [00:20<00:27,  4.10it/s, loss=2.4609, lr=0.000450]
+Training:  43%|████▎     | 84/196 [00:24<00:27,  4.10it/s, loss=2.4591, lr=0.000449]
+Training:  65%|██████▍   | 127/196 [00:30<00:16,  4.19it/s, loss=2.4591, lr=0.000449]
+Training:  65%|██████▍   | 127/196 [00:36<00:16,  4.19it/s, loss=2.4984, lr=0.000447]
+Training:  87%|████████▋ | 170/196 [00:40<00:06,  4.19it/s, loss=2.4984, lr=0.000447]
+                                                                                     
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s]
+                                                 
+Epoch 50 | Time: 48s | T_Loss: 2.458 | V_Loss: 3.688 | BLEU: 6.15
+ >> Sample: <s>Last week, the garmentous “American Home Apes” temporarily stopped sowing, intentionally triggering a false debate about the country’s plastic oxygen
+
+Training:   0%|          | 0/196 [00:00<?, ?it/s]
+Training:   0%|          | 0/196 [00:00<?, ?it/s, loss=2.4060, lr=0.000446]
+Training:  22%|██▏       | 43/196 [00:10<00:36,  4.22it/s, loss=2.4060, lr=0.000446]
+Training:  22%|██▏       | 43/196 [00:12<00:36,  4.22it/s, loss=2.4198, lr=0.000445]
+Training:  22%|██▏       | 43/196 [00:20<00:36,  4.22it/s, loss=2.4198, lr=0.000445]
+Training:  43%|████▎     | 84/196 [00:20<00:27,  4.09it/s, loss=2.4198, lr=0.000445]
+Training:  43%|████▎     | 84/196 [00:24<00:27,  4.09it/s, loss=2.4549, lr=0.000444]
+Training:  63%|██████▎   | 124/196 [00:30<00:17,  4.03it/s, loss=2.4549, lr=0.000444]
+Training:  63%|██████▎   | 124/196 [00:37<00:17,  4.03it/s, loss=2.4498, lr=0.000443]
+Training:  85%|████████▍ | 166/196 [00:40<00:07,  4.06it/s, loss=2.4498, lr=0.000443]
+                                                                                     
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s]
+                                                 
+Epoch 51 | Time: 49s | T_Loss: 2.447 | V_Loss: 3.699 | BLEU: 6.06
+ >> Sample: <s>Last week, the garbing of the “American Home” came to an intentional suspension of false discussions about the country’s dramatic harvest-correction rate.</s>, the
+
+Training:   0%|          | 0/196 [00:00<?, ?it/s]
+Training:   0%|          | 0/196 [00:00<?, ?it/s, loss=2.3822, lr=0.000442]
+Training:  21%|██        | 41/196 [00:10<00:38,  4.04it/s, loss=2.3822, lr=0.000442]
+Training:  21%|██        | 41/196 [00:12<00:38,  4.04it/s, loss=2.4355, lr=0.000441]
+Training:  43%|████▎     | 85/196 [00:20<00:26,  4.25it/s, loss=2.4355, lr=0.000441]
+Training:  43%|████▎     | 85/196 [00:24<00:26,  4.25it/s, loss=2.4171, lr=0.000440]
+Training:  66%|██████▌   | 129/196 [00:30<00:16,  4.16it/s, loss=2.4171, lr=0.000440]
+Training:  66%|██████▌   | 129/196 [00:36<00:16,  4.16it/s, loss=2.4552, lr=0.000439]
+Training:  88%|████████▊ | 173/196 [00:41<00:05,  4.24it/s, loss=2.4552, lr=0.000439]
+                                                                                     
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s]
+                                                 
+Epoch 52 | Time: 47s | T_Loss: 2.435 | V_Loss: 3.705 | BLEU: 5.75
+ >> Sample: <s>Last week, the garmented “American Home” temporarily stopped, triggering a fierce discussion about the falsehood of a country’s plastic harvest.</s> were a
+
+Training:   0%|          | 0/196 [00:00<?, ?it/s]
+Training:   0%|          | 0/196 [00:00<?, ?it/s, loss=2.3883, lr=0.000438]
+Training:  22%|██▏       | 43/196 [00:10<00:35,  4.29it/s, loss=2.3883, lr=0.000438]
+Training:  22%|██▏       | 43/196 [00:11<00:35,  4.29it/s, loss=2.3858, lr=0.000437]
+Training:  44%|████▍     | 86/196 [00:20<00:25,  4.25it/s, loss=2.3858, lr=0.000437]
+Training:  44%|████▍     | 86/196 [00:23<00:25,  4.25it/s, loss=2.4343, lr=0.000436]
+Training:  66%|██████▋   | 130/196 [00:30<00:15,  4.27it/s, loss=2.4343, lr=0.000436]
+Training:  66%|██████▋   | 130/196 [00:35<00:15,  4.27it/s, loss=2.4165, lr=0.000435]
+Training:  88%|████████▊ | 173/196 [00:41<00:05,  4.16it/s, loss=2.4165, lr=0.000435]
+                                                                                     
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s]
+                                                 
+Epoch 53 | Time: 48s | T_Loss: 2.423 | V_Loss: 3.697 | BLEU: 6.25
+ >> Sample: <s>Last week, the garmentous “US Home Anthony” delivered intentionally triggering fierce discussions about the country’s plastic harvests.</s> and the US government had
+
+Training:   0%|          | 0/196 [00:00<?, ?it/s]
+Training:   0%|          | 0/196 [00:00<?, ?it/s, loss=2.3882, lr=0.000434]
+Training:  19%|█▉        | 38/196 [00:10<00:42,  3.72it/s, loss=2.3882, lr=0.000434]
+Training:  19%|█▉        | 38/196 [00:13<00:42,  3.72it/s, loss=2.4204, lr=0.000433]
+Training:  41%|████      | 80/196 [00:20<00:29,  3.96it/s, loss=2.4204, lr=0.000433]
+Training:  41%|████      | 80/196 [00:25<00:29,  3.96it/s, loss=2.4185, lr=0.000432]
+Training:  62%|██████▏   | 122/196 [00:30<00:18,  3.97it/s, loss=2.4185, lr=0.000432]
+Training:  62%|██████▏   | 122/196 [00:38<00:18,  3.97it/s, loss=2.4646, lr=0.000430]
+Training:  83%|████████▎ | 163/196 [00:41<00:08,  3.98it/s, loss=2.4646, lr=0.000430]
+                                                                                     
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s]
+                                                 
+Epoch 54 | Time: 50s | T_Loss: 2.414 | V_Loss: 3.722 | BLEU: 5.96
+ >> Sample: <s>Last week, the garbage “US House Homey” delivered a hotly debate about the falsehood of a country’s plastic odds.</s> of the US-based crop
+
+Training:   0%|          | 0/196 [00:00<?, ?it/s]
+Training:   0%|          | 0/196 [00:00<?, ?it/s, loss=2.3966, lr=0.000430]
+Training:  21%|██        | 41/196 [00:10<00:38,  4.02it/s, loss=2.3966, lr=0.000430]
+Training:  21%|██        | 41/196 [00:12<00:38,  4.02it/s, loss=2.3640, lr=0.000429]
+Training:  42%|████▏     | 82/196 [00:20<00:28,  4.05it/s, loss=2.3640, lr=0.000429]
+Training:  42%|████▏     | 82/196 [00:24<00:28,  4.05it/s, loss=2.3972, lr=0.000428]
+Training:  63%|██████▎   | 123/196 [00:30<00:18,  4.04it/s, loss=2.3972, lr=0.000428]
+Training:  63%|██████▎   | 123/196 [00:37<00:18,  4.04it/s, loss=2.4344, lr=0.000427]
+Training:  84%|████████▎ | 164/196 [00:40<00:08,  4.00it/s, loss=2.4344, lr=0.000427]
+                                                                                     
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s]
+                                                 
+Epoch 55 | Time: 50s | T_Loss: 2.403 | V_Loss: 3.711 | BLEU: 5.80
+ >> Sample: <s>Last week, the garment of the garment “American Home” temporarily stopped sowing, unintendedly triggering a hotly discussion of the country’s plastic o
+
+Training:   0%|          | 0/196 [00:00<?, ?it/s]
+Training:   0%|          | 0/196 [00:00<?, ?it/s, loss=2.3179, lr=0.000426]
+Training:  21%|██▏       | 42/196 [00:10<00:37,  4.13it/s, loss=2.3179, lr=0.000426]
+Training:  21%|██▏       | 42/196 [00:12<00:37,  4.13it/s, loss=2.3763, lr=0.000425]
+Training:  43%|████▎     | 84/196 [00:20<00:27,  4.13it/s, loss=2.3763, lr=0.000425]
+Training:  43%|████▎     | 84/196 [00:24<00:27,  4.13it/s, loss=2.3986, lr=0.000424]
+Training:  64%|██████▍   | 126/196 [00:31<00:17,  4.02it/s, loss=2.3986, lr=0.000424]
+Training:  64%|██████▍   | 126/196 [00:37<00:17,  4.02it/s, loss=2.4147, lr=0.000423]
+Training:  86%|████████▌ | 168/196 [00:41<00:06,  4.06it/s, loss=2.4147, lr=0.000423]
+                                                                                     
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s]
+                                                 
+Epoch 56 | Time: 49s | T_Loss: 2.393 | V_Loss: 3.703 | BLEU: 5.88
+ >> Sample: <s>Last week, the garmented “American Home App” temporarily stopped sending a false discussion of the country’s plastic odds.</s> were not surprised.</s> were
+
+Training:   0%|          | 0/196 [00:00<?, ?it/s]
+Training:   0%|          | 0/196 [00:00<?, ?it/s, loss=2.3476, lr=0.000422]
+Training:  20%|██        | 40/196 [00:10<00:39,  3.96it/s, loss=2.3476, lr=0.000422]
+Training:  20%|██        | 40/196 [00:12<00:39,  3.96it/s, loss=2.3965, lr=0.000421]
+Training:  42%|████▏     | 83/196 [00:20<00:27,  4.12it/s, loss=2.3965, lr=0.000421]
+Training:  42%|████▏     | 83/196 [00:24<00:27,  4.12it/s, loss=2.4103, lr=0.000420]
+Training:  64%|██████▍   | 126/196 [00:31<00:17,  4.03it/s, loss=2.4103, lr=0.000420]
+Training:  64%|██████▍   | 126/196 [00:37<00:17,  4.03it/s, loss=2.4194, lr=0.000419]
+Training:  85%|████████▌ | 167/196 [00:41<00:07,  4.02it/s, loss=2.4194, lr=0.000419]
+                                                                                     
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s]
+                                                 
+Epoch 57 | Time: 49s | T_Loss: 2.383 | V_Loss: 3.705 | BLEU: 5.71
+ >> Sample: <s>Last week, the garbage “American Home” temporarily stopped sending, unexpectedly triggering hotly discussion about the country’s casualties.</s> are not likely
+
+Training:   0%|          | 0/196 [00:00<?, ?it/s]
+Training:   0%|          | 0/196 [00:00<?, ?it/s, loss=2.3266, lr=0.000418]
+Training:  20%|██        | 40/196 [00:10<00:39,  3.97it/s, loss=2.3266, lr=0.000418]
+Training:  20%|██        | 40/196 [00:12<00:39,  3.97it/s, loss=2.3323, lr=0.000417]
+Training:  42%|████▏     | 83/196 [00:20<00:27,  4.16it/s, loss=2.3323, lr=0.000417]
+Training:  42%|████▏     | 83/196 [00:24<00:27,  4.16it/s, loss=2.3706, lr=0.000416]
+Training:  64%|██████▍   | 126/196 [00:30<00:16,  4.20it/s, loss=2.3706, lr=0.000416]
+Training:  64%|██████▍   | 126/196 [00:36<00:16,  4.20it/s, loss=2.4189, lr=0.000415]
+Training:  86%|████████▌ | 169/196 [00:40<00:06,  4.17it/s, loss=2.4189, lr=0.000415]
+                                                                                     
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s]
+                                                 
+Epoch 58 | Time: 48s | T_Loss: 2.374 | V_Loss: 3.716 | BLEU: 6.01
+ >> Sample: <s>Last week, the garbish mechanical Anthony of the American Home Act stopped intentionally triggering a hypocrisy debate about the country’s plague-based c
+
+Training:   0%|          | 0/196 [00:00<?, ?it/s]
+Training:   0%|          | 0/196 [00:00<?, ?it/s, loss=2.3501, lr=0.000414]
+Training:  21%|██        | 41/196 [00:10<00:38,  4.06it/s, loss=2.3501, lr=0.000414]
+Training:  21%|██        | 41/196 [00:12<00:38,  4.06it/s, loss=2.3384, lr=0.000414]
+Training:  42%|████▏     | 82/196 [00:20<00:28,  4.01it/s, loss=2.3384, lr=0.000414]
+Training:  42%|████▏     | 82/196 [00:25<00:28,  4.01it/s, loss=2.3583, lr=0.000413]
+Training:  63%|██████▎   | 124/196 [00:30<00:17,  4.07it/s, loss=2.3583, lr=0.000413]
+Training:  63%|██████▎   | 124/196 [00:37<00:17,  4.07it/s, loss=2.3541, lr=0.000412]
+Training:  85%|████████▍ | 166/196 [00:40<00:07,  4.05it/s, loss=2.3541, lr=0.000412]
+                                                                                     
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s]
+                                                 
+Epoch 59 | Time: 49s | T_Loss: 2.364 | V_Loss: 3.720 | BLEU: 6.25
+ >> Sample: <s>Last week, the garmented “American Home Antibes” temporarily stopped sowing a false debate about the country’s plastic harvests.</s> were the result of a
+
+Training:   0%|          | 0/196 [00:00<?, ?it/s]
+Training:   0%|          | 0/196 [00:00<?, ?it/s, loss=2.3130, lr=0.000411]
+Training:  21%|██        | 41/196 [00:10<00:38,  4.03it/s, loss=2.3130, lr=0.000411]
+Training:  21%|██        | 41/196 [00:12<00:38,  4.03it/s, loss=2.3296, lr=0.000410]
+Training:  42%|████▏     | 83/196 [00:20<00:27,  4.08it/s, loss=2.3296, lr=0.000410]
+Training:  42%|████▏     | 83/196 [00:25<00:27,  4.08it/s, loss=2.3890, lr=0.000409]
+Training:  64%|██████▍   | 125/196 [00:31<00:17,  4.02it/s, loss=2.3890, lr=0.000409]
+Training:  64%|██████▍   | 125/196 [00:37<00:17,  4.02it/s, loss=2.3644, lr=0.000408]
+Training:  85%|████████▍ | 166/196 [00:41<00:07,  4.03it/s, loss=2.3644, lr=0.000408]
+                                                                                     
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s]
+                                                 
+Epoch 60 | Time: 49s | T_Loss: 2.354 | V_Loss: 3.714 | BLEU: 6.22
+ >> Sample: <s>Last week, the garmented “American Homey” temporarily stopped sloganing, unintendedly triggering hot debate about the country’s plastic harvests.</s> g
+
+Training:   0%|          | 0/196 [00:00<?, ?it/s]
+Training:   0%|          | 0/196 [00:00<?, ?it/s, loss=2.3149, lr=0.000408]
+Training:  20%|██        | 40/196 [00:10<00:39,  3.93it/s, loss=2.3149, lr=0.000408]
+Training:  20%|██        | 40/196 [00:12<00:39,  3.93it/s, loss=2.3863, lr=0.000407]
+Training:  42%|████▏     | 82/196 [00:20<00:28,  4.05it/s, loss=2.3863, lr=0.000407]
+Training:  42%|████▏     | 82/196 [00:25<00:28,  4.05it/s, loss=2.3469, lr=0.000406]
+Training:  63%|██████▎   | 124/196 [00:30<00:17,  4.07it/s, loss=2.3469, lr=0.000406]
+Training:  63%|██████▎   | 124/196 [00:37<00:17,  4.07it/s, loss=2.3224, lr=0.000405]
+Training:  85%|████████▍ | 166/196 [00:40<00:07,  4.09it/s, loss=2.3224, lr=0.000405]
+                                                                                     
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s]
+                                                 
+Epoch 61 | Time: 48s | T_Loss: 2.345 | V_Loss: 3.716 | BLEU: 6.04
+ >> Sample: <s>Last week, the garbage “American Home” came to an intentional halt, triggering a ferocious discussion about the country’s plastic harvest.</s> and the US would be
+
+Training:   0%|          | 0/196 [00:00<?, ?it/s]
+Training:   0%|          | 0/196 [00:00<?, ?it/s, loss=2.3277, lr=0.000404]
+Training:  21%|██        | 41/196 [00:10<00:38,  4.07it/s, loss=2.3277, lr=0.000404]
+Training:  21%|██        | 41/196 [00:12<00:38,  4.07it/s, loss=2.3239, lr=0.000403]
+Training:  42%|████▏     | 82/196 [00:20<00:28,  3.95it/s, loss=2.3239, lr=0.000403]
+Training:  42%|████▏     | 82/196 [00:25<00:28,  3.95it/s, loss=2.3413, lr=0.000402]
+Training:  63%|██████▎   | 124/196 [00:30<00:17,  4.06it/s, loss=2.3413, lr=0.000402]
+Training:  63%|██████▎   | 124/196 [00:37<00:17,  4.06it/s, loss=2.3353, lr=0.000402]
+Training:  85%|████████▍ | 166/196 [00:41<00:07,  3.98it/s, loss=2.3353, lr=0.000402]
+                                                                                     
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s]
+                                                 
+Epoch 62 | Time: 50s | T_Loss: 2.337 | V_Loss: 3.722 | BLEU: 5.98
+ >> Sample: <s>Last week, the garmentous “American Home” delayed temporary halt, triggering a false debate about the country’s plastic odds.</s> and the US have deliber
+
+Training:   0%|          | 0/196 [00:00<?, ?it/s]
+Training:   0%|          | 0/196 [00:00<?, ?it/s, loss=2.2719, lr=0.000401]
+Training:  21%|██        | 41/196 [00:10<00:37,  4.09it/s, loss=2.2719, lr=0.000401]
+Training:  21%|██        | 41/196 [00:12<00:37,  4.09it/s, loss=2.3119, lr=0.000400]
+Training:  42%|████▏     | 82/196 [00:20<00:27,  4.08it/s, loss=2.3119, lr=0.000400]
+Training:  42%|████▏     | 82/196 [00:24<00:27,  4.08it/s, loss=2.3232, lr=0.000399]
+Training:  63%|██████▎   | 123/196 [00:30<00:17,  4.08it/s, loss=2.3232, lr=0.000399]
+Training:  63%|██████▎   | 123/196 [00:37<00:17,  4.08it/s, loss=2.3749, lr=0.000398]
+Training:  84%|████████▍ | 165/196 [00:40<00:07,  4.10it/s, loss=2.3749, lr=0.000398]
+                                                                                     
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s]
+                                                 
+Epoch 63 | Time: 48s | T_Loss: 2.328 | V_Loss: 3.722 | BLEU: 5.88
+ >> Sample: <s>Last week, the garmented “American Home” temporarily stopped sowing, triggering a false debate about the country’s plastic harvesting.</s> and the US would-
+
+Training:   0%|          | 0/196 [00:00<?, ?it/s]
+Training:   0%|          | 0/196 [00:00<?, ?it/s, loss=2.2940, lr=0.000398]
+Training:  21%|██▏       | 42/196 [00:10<00:37,  4.16it/s, loss=2.2940, lr=0.000398]
+Training:  21%|██▏       | 42/196 [00:12<00:37,  4.16it/s, loss=2.2880, lr=0.000397]
+Training:  43%|████▎     | 84/196 [00:20<00:27,  4.11it/s, loss=2.2880, lr=0.000397]
+Training:  43%|████▎     | 84/196 [00:24<00:27,  4.11it/s, loss=2.3563, lr=0.000396]
+Training:  64%|██████▍   | 125/196 [00:30<00:17,  4.08it/s, loss=2.3563, lr=0.000396]
+Training:  64%|██████▍   | 125/196 [00:36<00:17,  4.08it/s, loss=2.3460, lr=0.000395]
+Training:  85%|████████▌ | 167/196 [00:40<00:07,  4.10it/s, loss=2.3460, lr=0.000395]
+                                                                                     
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s]
+                                                 
+Epoch 64 | Time: 48s | T_Loss: 2.320 | V_Loss: 3.731 | BLEU: 5.80
+ >> Sample: <s>Last week, the formal chess “American Home Act” delivered a temporary cease-fire debate about the country’s plague-denominated reception.</s>, the US-based “
+
+Training:   0%|          | 0/196 [00:00<?, ?it/s]
+Training:   0%|          | 0/196 [00:00<?, ?it/s, loss=2.2488, lr=0.000395]
+Training:  20%|██        | 40/196 [00:10<00:40,  3.90it/s, loss=2.2488, lr=0.000395]
+Training:  20%|██        | 40/196 [00:12<00:40,  3.90it/s, loss=2.2983, lr=0.000394]
+Training:  41%|████▏     | 81/196 [00:20<00:28,  4.01it/s, loss=2.2983, lr=0.000394]
+Training:  41%|████▏     | 81/196 [00:24<00:28,  4.01it/s, loss=2.3072, lr=0.000393]
+Training:  63%|██████▎   | 124/196 [00:30<00:17,  4.13it/s, loss=2.3072, lr=0.000393]
+Training:  63%|██████▎   | 124/196 [00:37<00:17,  4.13it/s, loss=2.3414, lr=0.000392]
+Training:  85%|████████▌ | 167/196 [00:40<00:07,  4.09it/s, loss=2.3414, lr=0.000392]
+                                                                                     
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s]
+                                                 
+Epoch 65 | Time: 49s | T_Loss: 2.316 | V_Loss: 3.729 | BLEU: 6.25
+ >> Sample: <s>Last week, the timing of the camera “American Home Approll” delivered intentionally triggered false discussion of national dramatic odds.</s>, the US-
+
+Training:   0%|          | 0/196 [00:00<?, ?it/s]
+Training:   0%|          | 0/196 [00:00<?, ?it/s, loss=2.2826, lr=0.000392]
+Training:  22%|██▏       | 43/196 [00:10<00:36,  4.21it/s, loss=2.2826, lr=0.000392]
+Training:  22%|██▏       | 43/196 [00:11<00:36,  4.21it/s, loss=2.2929, lr=0.000391]
+Training:  44%|████▍     | 86/196 [00:20<00:26,  4.09it/s, loss=2.2929, lr=0.000391]
+Training:  44%|████▍     | 86/196 [00:24<00:26,  4.09it/s, loss=2.2857, lr=0.000390]
+Training:  65%|██████▍   | 127/196 [00:30<00:16,  4.09it/s, loss=2.2857, lr=0.000390]
+Training:  65%|██████▍   | 127/196 [00:37<00:16,  4.09it/s, loss=2.3400, lr=0.000389]
+Training:  86%|████████▌ | 168/196 [00:41<00:06,  4.05it/s, loss=2.3400, lr=0.000389]
+                                                                                     
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s]
+                                                 
+Epoch 66 | Time: 49s | T_Loss: 2.304 | V_Loss: 3.711 | BLEU: 5.99
+ >> Sample: <s>Last week, the hasthazard Anthony’s Service Act stopped temporarily, triggered a heated debate about the country’s plastic harvests.</s> stru
+
+Training:   0%|          | 0/196 [00:00<?, ?it/s]
+Training:   0%|          | 0/196 [00:00<?, ?it/s, loss=2.2516, lr=0.000389]
+Training:  20%|█▉        | 39/196 [00:10<00:40,  3.84it/s, loss=2.2516, lr=0.000389]
+Training:  20%|█▉        | 39/196 [00:12<00:40,  3.84it/s, loss=2.3007, lr=0.000388]
+Training:  41%|████▏     | 81/196 [00:20<00:28,  4.02it/s, loss=2.3007, lr=0.000388]
+Training:  41%|████▏     | 81/196 [00:25<00:28,  4.02it/s, loss=2.3052, lr=0.000387]
+Training:  41%|████▏     | 81/196 [00:30<00:28,  4.02it/s, loss=2.3052, lr=0.000387]
+Training:  63%|██████▎   | 123/196 [00:30<00:18,  3.99it/s, loss=2.3052, lr=0.000387]
+Training:  63%|██████▎   | 123/196 [00:37<00:18,  3.99it/s, loss=2.2997, lr=0.000386]
+Training:  85%|████████▍ | 166/196 [00:41<00:07,  4.07it/s, loss=2.2997, lr=0.000386]
+                                                                                     
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s]
+                                                 
+Epoch 67 | Time: 50s | T_Loss: 2.296 | V_Loss: 3.725 | BLEU: 6.10
+ >> Sample: <s>Last week, the ancient showy “American Home” was deliberately sought to trigger false discussions about the country’s sharp casualties.</s> of the US and the US,
+
+Training:   0%|          | 0/196 [00:00<?, ?it/s]
+Training:   0%|          | 0/196 [00:00<?, ?it/s, loss=2.2257, lr=0.000386]
+Training:  21%|██        | 41/196 [00:10<00:38,  4.06it/s, loss=2.2257, lr=0.000386]
+Training:  21%|██        | 41/196 [00:12<00:38,  4.06it/s, loss=2.2619, lr=0.000385]
+Training:  43%|████▎     | 84/196 [00:20<00:26,  4.16it/s, loss=2.2619, lr=0.000385]
+Training:  43%|████▎     | 84/196 [00:24<00:26,  4.16it/s, loss=2.2558, lr=0.000384]
+Training:  65%|██████▍   | 127/196 [00:30<00:16,  4.12it/s, loss=2.2558, lr=0.000384]
+Training:  65%|██████▍   | 127/196 [00:36<00:16,  4.12it/s, loss=2.2784, lr=0.000383]
+Training:  86%|████████▌ | 168/196 [00:40<00:06,  4.10it/s, loss=2.2784, lr=0.000383]
+                                                                                     
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s]
+                                                 
+Epoch 68 | Time: 48s | T_Loss: 2.289 | V_Loss: 3.725 | BLEU: 6.23
+ >> Sample: <s>Last week, the hailing “American Homey” temporarily stopped sowing, triggering intentionally heated debate about the country’s dramatic harvesting rate.</s> of the US-
+
+Training:   0%|          | 0/196 [00:00<?, ?it/s]
+Training:   0%|          | 0/196 [00:00<?, ?it/s, loss=2.2355, lr=0.000383]
+Training:  20%|██        | 40/196 [00:10<00:39,  3.90it/s, loss=2.2355, lr=0.000383]
+Training:  20%|██        | 40/196 [00:12<00:39,  3.90it/s, loss=2.2877, lr=0.000382]
+Training:  41%|████      | 80/196 [00:20<00:29,  3.90it/s, loss=2.2877, lr=0.000382]
+Training:  41%|████      | 80/196 [00:25<00:29,  3.90it/s, loss=2.2782, lr=0.000381]
+Training:  62%|██████▏   | 122/196 [00:30<00:18,  4.03it/s, loss=2.2782, lr=0.000381]
+Training:  62%|██████▏   | 122/196 [00:37<00:18,  4.03it/s, loss=2.2909, lr=0.000381]
+Training:  84%|████████▎ | 164/196 [00:40<00:07,  4.05it/s, loss=2.2909, lr=0.000381]
+                                                                                     
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s]
+                                                 
+Epoch 69 | Time: 49s | T_Loss: 2.281 | V_Loss: 3.727 | BLEU: 5.97
+ >> Sample: <s>Last week, the haven’s “American Home” sowl, deliberately triggered a fierce debate about the country’s plastic harvesting rate.</s>, the US, the US
+
+Training:   0%|          | 0/196 [00:00<?, ?it/s]
+Training:   0%|          | 0/196 [00:00<?, ?it/s, loss=2.2412, lr=0.000380]
+Training:  21%|██        | 41/196 [00:10<00:38,  4.08it/s, loss=2.2412, lr=0.000380]
+Training:  21%|██        | 41/196 [00:12<00:38,  4.08it/s, loss=2.2746, lr=0.000379]
+Training:  42%|████▏     | 83/196 [00:20<00:27,  4.15it/s, loss=2.2746, lr=0.000379]
+Training:  42%|████▏     | 83/196 [00:24<00:27,  4.15it/s, loss=2.2723, lr=0.000379]
+Training:  64%|██████▍   | 125/196 [00:30<00:17,  4.05it/s, loss=2.2723, lr=0.000379]
+Training:  64%|██████▍   | 125/196 [00:37<00:17,  4.05it/s, loss=2.2831, lr=0.000378]
+Training:  84%|████████▍ | 165/196 [00:40<00:07,  4.02it/s, loss=2.2831, lr=0.000378]
+                                                                                     
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s]
+                                                 
+Epoch 70 | Time: 49s | T_Loss: 2.275 | V_Loss: 3.730 | BLEU: 6.06
+ >> Sample: <s>Last week, the ancient artillery “American Home” temporarily stopped sending, triggering intentionally hotly discussion about the country’s plastic odds.</s>
+
+Training:   0%|          | 0/196 [00:00<?, ?it/s]
+Training:   0%|          | 0/196 [00:00<?, ?it/s, loss=2.2577, lr=0.000377]
+Training:  21%|██▏       | 42/196 [00:10<00:37,  4.10it/s, loss=2.2577, lr=0.000377]
+Training:  21%|██▏       | 42/196 [00:12<00:37,  4.10it/s, loss=2.2654, lr=0.000377]
+Training:  43%|████▎     | 84/196 [00:20<00:27,  4.08it/s, loss=2.2654, lr=0.000377]
+Training:  43%|████▎     | 84/196 [00:24<00:27,  4.08it/s, loss=2.2711, lr=0.000376]
+Training:  64%|██████▍   | 125/196 [00:30<00:17,  4.08it/s, loss=2.2711, lr=0.000376]
+Training:  64%|██████▍   | 125/196 [00:37<00:17,  4.08it/s, loss=2.2564, lr=0.000375]
+Training:  85%|████████▍ | 166/196 [00:41<00:07,  3.99it/s, loss=2.2564, lr=0.000375]
+                                                                                     
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s]
+                                                 
+Epoch 71 | Time: 49s | T_Loss: 2.267 | V_Loss: 3.737 | BLEU: 6.04
+ >> Sample: <s>Last week, the hasting of the novel “American Home” was deliberately triggered a fierce debate about the falsehood of national yields.</s> of the US-US plague
+
+Training:   0%|          | 0/196 [00:00<?, ?it/s]
+Training:   0%|          | 0/196 [00:00<?, ?it/s, loss=2.2110, lr=0.000375]
+Training:  21%|██        | 41/196 [00:10<00:38,  4.04it/s, loss=2.2110, lr=0.000375]
+Training:  21%|██        | 41/196 [00:12<00:38,  4.04it/s, loss=2.2491, lr=0.000374]
+Training:  42%|████▏     | 82/196 [00:20<00:28,  4.06it/s, loss=2.2491, lr=0.000374]
+Training:  42%|████▏     | 82/196 [00:24<00:28,  4.06it/s, loss=2.2581, lr=0.000373]
+Training:  63%|██████▎   | 123/196 [00:30<00:18,  4.03it/s, loss=2.2581, lr=0.000373]
+Training:  63%|██████▎   | 123/196 [00:37<00:18,  4.03it/s, loss=2.3033, lr=0.000373]
+Training:  84%|████████▍ | 165/196 [00:40<00:07,  4.07it/s, loss=2.3033, lr=0.000373]
+                                                                                     
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s]
+                                                 
+Epoch 72 | Time: 49s | T_Loss: 2.261 | V_Loss: 3.730 | BLEU: 6.13
+ >> Sample: <s>Last week, the havens of the novel “American Home” delivered temporary halt, triggering false discussions about the country’s dramatic harvest.</s></s>.</s> the US government
+
+Training:   0%|          | 0/196 [00:00<?, ?it/s]
+Training:   0%|          | 0/196 [00:00<?, ?it/s, loss=2.2237, lr=0.000372]
+Training:  21%|██▏       | 42/196 [00:10<00:37,  4.08it/s, loss=2.2237, lr=0.000372]
+Training:  21%|██▏       | 42/196 [00:12<00:37,  4.08it/s, loss=2.2429, lr=0.000371]
+Training:  43%|████▎     | 84/196 [00:20<00:27,  4.13it/s, loss=2.2429, lr=0.000371]
+Training:  43%|████▎     | 84/196 [00:24<00:27,  4.13it/s, loss=2.2330, lr=0.000371]
+Training:  65%|██████▍   | 127/196 [00:30<00:16,  4.16it/s, loss=2.2330, lr=0.000371]
+Training:  65%|██████▍   | 127/196 [00:36<00:16,  4.16it/s, loss=2.2686, lr=0.000370]
+Training:  87%|████████▋ | 170/196 [00:41<00:06,  4.02it/s, loss=2.2686, lr=0.000370]
+                                                                                     
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s]
+                                                 
+Epoch 73 | Time: 49s | T_Loss: 2.254 | V_Loss: 3.738 | BLEU: 6.18
+ >> Sample: <s>Last week, the ancient “American Home” delivered temporary halt, triggering a heated debate about the country’s dramatic harvests.</s> the US government’s suddenly sp
+
+Training:   0%|          | 0/196 [00:00<?, ?it/s]
+Training:   0%|          | 0/196 [00:00<?, ?it/s, loss=2.1936, lr=0.000369]
+Training:  22%|██▏       | 43/196 [00:10<00:36,  4.18it/s, loss=2.1936, lr=0.000369]
+Training:  22%|██▏       | 43/196 [00:12<00:36,  4.18it/s, loss=2.2219, lr=0.000369]
+Training:  43%|████▎     | 85/196 [00:20<00:27,  4.10it/s, loss=2.2219, lr=0.000369]
+Training:  43%|████▎     | 85/196 [00:24<00:27,  4.10it/s, loss=2.2681, lr=0.000368]
+Training:  64%|██████▍   | 126/196 [00:30<00:17,  4.10it/s, loss=2.2681, lr=0.000368]
+Training:  64%|██████▍   | 126/196 [00:37<00:17,  4.10it/s, loss=2.2585, lr=0.000368]
+Training:  85%|████████▌ | 167/196 [00:41<00:07,  4.02it/s, loss=2.2585, lr=0.000368]
+                                                                                     
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s]
+                                                 
+Epoch 74 | Time: 49s | T_Loss: 2.247 | V_Loss: 3.740 | BLEU: 5.92
+ >> Sample: <s>Last week, the ancient artillery “US private Home” deliberately triggered a fierce debate about the country’s output catch-up.</s> of the US government’s recent break
+
+Training:   0%|          | 0/196 [00:00<?, ?it/s]
+Training:   0%|          | 0/196 [00:00<?, ?it/s, loss=2.2138, lr=0.000367]
+Training:  21%|██        | 41/196 [00:10<00:38,  3.98it/s, loss=2.2138, lr=0.000367]
+Training:  21%|██        | 41/196 [00:12<00:38,  3.98it/s, loss=2.2344, lr=0.000366]
+Training:  42%|████▏     | 83/196 [00:20<00:27,  4.06it/s, loss=2.2344, lr=0.000366]
+Training:  42%|████▏     | 83/196 [00:24<00:27,  4.06it/s, loss=2.2539, lr=0.000366]
+Training:  64%|██████▍   | 125/196 [00:30<00:17,  4.05it/s, loss=2.2539, lr=0.000366]
+Training:  64%|██████▍   | 125/196 [00:37<00:17,  4.05it/s, loss=2.2457, lr=0.000365]
+Training:  85%|████████▌ | 167/196 [00:41<00:07,  4.08it/s, loss=2.2457, lr=0.000365]
+                                                                                     
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s]
+                                                 
+Epoch 75 | Time: 49s | T_Loss: 2.241 | V_Loss: 3.746 | BLEU: 5.76
+ >> Sample: <s>Last week, the temporary stop of the ancient artillery “American Home” triggered a false debate about the country’s plague-based ceremonies.</s> arises
+
+Training:   0%|          | 0/196 [00:00<?, ?it/s]
+Training:   0%|          | 0/196 [00:00<?, ?it/s, loss=2.1869, lr=0.000364]
+Training:  21%|██        | 41/196 [00:10<00:38,  4.06it/s, loss=2.1869, lr=0.000364]
+Training:  21%|██        | 41/196 [00:12<00:38,  4.06it/s, loss=2.2311, lr=0.000364]
+Training:  21%|██        | 41/196 [00:20<00:38,  4.06it/s, loss=2.2311, lr=0.000364]
+Training:  42%|████▏     | 82/196 [00:20<00:28,  4.06it/s, loss=2.2311, lr=0.000364]
+Training:  42%|████▏     | 82/196 [00:25<00:28,  4.06it/s, loss=2.2555, lr=0.000363]
+Training:  63%|██████▎   | 123/196 [00:30<00:18,  4.02it/s, loss=2.2555, lr=0.000363]
+Training:  63%|██████▎   | 123/196 [00:37<00:18,  4.02it/s, loss=2.2469, lr=0.000363]
+Training:  84%|████████▍ | 165/196 [00:40<00:07,  4.05it/s, loss=2.2469, lr=0.000363]
+                                                                                     
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s]
+                                                 
+Epoch 76 | Time: 49s | T_Loss: 2.234 | V_Loss: 3.758 | BLEU: 5.85
+ >> Sample: <s>Last week, the ancient film “American Homey” stopped in an intentional cessation of false discussions about national yields.</s> of the US government’s crop failures
+
+Training:   0%|          | 0/196 [00:00<?, ?it/s]
+Training:   0%|          | 0/196 [00:00<?, ?it/s, loss=2.2095, lr=0.000362]
+Training:  22%|██▏       | 44/196 [00:10<00:35,  4.33it/s, loss=2.2095, lr=0.000362]
+Training:  22%|██▏       | 44/196 [00:11<00:35,  4.33it/s, loss=2.1786, lr=0.000361]
+Training:  45%|████▍     | 88/196 [00:21<00:26,  4.14it/s, loss=2.1786, lr=0.000361]
+Training:  45%|████▍     | 88/196 [00:24<00:26,  4.14it/s, loss=2.2544, lr=0.000361]
+Training:  66%|██████▋   | 130/196 [00:31<00:15,  4.16it/s, loss=2.2544, lr=0.000361]
+Training:  66%|██████▋   | 130/196 [00:36<00:15,  4.16it/s, loss=2.2447, lr=0.000360]
+Training:  66%|██████▋   | 130/196 [00:41<00:15,  4.16it/s, loss=2.2447, lr=0.000360]
+Training:  88%|████████▊ | 172/196 [00:41<00:05,  4.10it/s, loss=2.2447, lr=0.000360]
+                                                                                     
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s]
+                                                 
+Epoch 77 | Time: 48s | T_Loss: 2.227 | V_Loss: 3.753 | BLEU: 6.27
+ >> Sample: <s>Last week, the ancient artillery “American Homey” deliberately triggered false discussions about the country’s plotic casualties.</s> of the US-based
+
+Training:   0%|          | 0/196 [00:00<?, ?it/s]
+Training:   0%|          | 0/196 [00:00<?, ?it/s, loss=2.2198, lr=0.000360]
+Training:  22%|██▏       | 43/196 [00:10<00:35,  4.28it/s, loss=2.2198, lr=0.000360]
+Training:  22%|██▏       | 43/196 [00:11<00:35,  4.28it/s, loss=2.2294, lr=0.000359]
+Training:  44%|████▍     | 86/196 [00:20<00:26,  4.23it/s, loss=2.2294, lr=0.000359]
+Training:  44%|████▍     | 86/196 [00:23<00:26,  4.23it/s, loss=2.2276, lr=0.000359]
+Training:  66%|██████▋   | 130/196 [00:30<00:15,  4.27it/s, loss=2.2276, lr=0.000359]
+Training:  66%|██████▋   | 130/196 [00:35<00:15,  4.27it/s, loss=2.2489, lr=0.000358]
+Training:  89%|████████▉ | 174/196 [00:40<00:05,  4.30it/s, loss=2.2489, lr=0.000358]
+                                                                                     
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s]
+                                                 
+Epoch 78 | Time: 46s | T_Loss: 2.222 | V_Loss: 3.750 | BLEU: 6.10
+ >> Sample: <s>Last week, the hasty “American Homey” cessation triggered intentionally heated debate about the country’s plague-campaign.</s> of the US-based housing baby.
+
+Training:   0%|          | 0/196 [00:00<?, ?it/s]
+Training:   0%|          | 0/196 [00:00<?, ?it/s, loss=2.1738, lr=0.000357]
+Training:  22%|██▏       | 44/196 [00:10<00:34,  4.40it/s, loss=2.1738, lr=0.000357]
+Training:  22%|██▏       | 44/196 [00:11<00:34,  4.40it/s, loss=2.1931, lr=0.000357]
+Training:  45%|████▍     | 88/196 [00:20<00:25,  4.23it/s, loss=2.1931, lr=0.000357]
+Training:  45%|████▍     | 88/196 [00:23<00:25,  4.23it/s, loss=2.2286, lr=0.000356]
+Training:  66%|██████▋   | 130/196 [00:31<00:15,  4.13it/s, loss=2.2286, lr=0.000356]
+Training:  66%|██████▋   | 130/196 [00:36<00:15,  4.13it/s, loss=2.2086, lr=0.000356]
+Training:  87%|████████▋ | 171/196 [00:41<00:06,  4.05it/s, loss=2.2086, lr=0.000356]
+                                                                                     
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s]
+                                                 
+Epoch 79 | Time: 49s | T_Loss: 2.216 | V_Loss: 3.747 | BLEU: 6.22
+ >> Sample: <s>Last week, the ancient artillery “American Home” came to a temporary halt, with the surprise triggered a fierce debate about the country’s plotic crop yield.</s>
+
+Training:   0%|          | 0/196 [00:00<?, ?it/s]
+Training:   0%|          | 0/196 [00:00<?, ?it/s, loss=2.1935, lr=0.000355]
+Training:  21%|██▏       | 42/196 [00:10<00:37,  4.11it/s, loss=2.1935, lr=0.000355]
+Training:  21%|██▏       | 42/196 [00:12<00:37,  4.11it/s, loss=2.1909, lr=0.000355]
+Training:  43%|████▎     | 84/196 [00:20<00:27,  4.12it/s, loss=2.1909, lr=0.000355]
+Training:  43%|████▎     | 84/196 [00:24<00:27,  4.12it/s, loss=2.2210, lr=0.000354]
+Training:  64%|██████▍   | 126/196 [00:30<00:17,  4.10it/s, loss=2.2210, lr=0.000354]
+Training:  64%|██████▍   | 126/196 [00:36<00:17,  4.10it/s, loss=2.2157, lr=0.000353]
+Training:  86%|████████▌ | 168/196 [00:40<00:06,  4.10it/s, loss=2.2157, lr=0.000353]
+                                                                                     
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s]
+                                                 
+Epoch 80 | Time: 48s | T_Loss: 2.210 | V_Loss: 3.756 | BLEU: 6.23
+ >> Sample: <s>Last week, the ancient firestorming of the American Home Person triggered a fierce debate about the country’s plague-based calculation.</s> of the US-based c
+
+Training:   0%|          | 0/196 [00:00<?, ?it/s]
+Training:   0%|          | 0/196 [00:00<?, ?it/s, loss=2.1574, lr=0.000353]
+Training:  22%|██▏       | 43/196 [00:10<00:35,  4.26it/s, loss=2.1574, lr=0.000353]
+Training:  22%|██▏       | 43/196 [00:12<00:35,  4.26it/s, loss=2.1676, lr=0.000352]
+Training:  22%|██▏       | 43/196 [00:20<00:35,  4.26it/s, loss=2.1676, lr=0.000352]
+Training:  44%|████▍     | 87/196 [00:20<00:25,  4.32it/s, loss=2.1676, lr=0.000352]
+Training:  44%|████▍     | 87/196 [00:23<00:25,  4.32it/s, loss=2.1729, lr=0.000352]
+Training:  67%|██████▋   | 131/196 [00:30<00:15,  4.32it/s, loss=2.1729, lr=0.000352]
+Training:  67%|██████▋   | 131/196 [00:35<00:15,  4.32it/s, loss=2.2366, lr=0.000351]
+Training:  89%|████████▉ | 175/196 [00:41<00:04,  4.24it/s, loss=2.2366, lr=0.000351]
+                                                                                     
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s]
+                                                 
+Epoch 81 | Time: 47s | T_Loss: 2.204 | V_Loss: 3.763 | BLEU: 6.04
+ >> Sample: <s>Last week, the ancient fashion of the American Home Act delivered intentionally triggering false discussions about the country’s plastic harvest.</s> the US-based doc
+
+Training:   0%|          | 0/196 [00:00<?, ?it/s]
+Training:   0%|          | 0/196 [00:00<?, ?it/s, loss=2.1736, lr=0.000351]
+Training:  22%|██▏       | 44/196 [00:10<00:35,  4.33it/s, loss=2.1736, lr=0.000351]
+Training:  22%|██▏       | 44/196 [00:11<00:35,  4.33it/s, loss=2.1753, lr=0.000350]
+Training:  45%|████▌     | 89/196 [00:20<00:24,  4.37it/s, loss=2.1753, lr=0.000350]
+Training:  45%|████▌     | 89/196 [00:23<00:24,  4.37it/s, loss=2.2023, lr=0.000350]
+Training:  68%|██████▊   | 133/196 [00:30<00:14,  4.36it/s, loss=2.2023, lr=0.000350]
+Training:  68%|██████▊   | 133/196 [00:34<00:14,  4.36it/s, loss=2.2371, lr=0.000349]
+Training:  90%|█████████ | 177/196 [00:40<00:04,  4.30it/s, loss=2.2371, lr=0.000349]
+                                                                                     
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s]
+                                                 
+Epoch 82 | Time: 46s | T_Loss: 2.199 | V_Loss: 3.762 | BLEU: 6.44
+ >> Sample: <s>Last week, the ancient fashion of the American Home Act delivered temporary halt, triggering a fierce debate about the country’s plague-based crop yield.</s> of
+ >> New Best! Saving to ./transformer_checkpoints/exp_128_layer_sinusoidal_512_8_6_2048_512_0.0005
+
+Training:   0%|          | 0/196 [00:00<?, ?it/s]
+Training:   0%|          | 0/196 [00:00<?, ?it/s, loss=2.1397, lr=0.000349]
+Training:  21%|██        | 41/196 [00:10<00:37,  4.10it/s, loss=2.1397, lr=0.000349]
+Training:  21%|██        | 41/196 [00:12<00:37,  4.10it/s, loss=2.1926, lr=0.000348]
+Training:  42%|████▏     | 82/196 [00:20<00:28,  4.00it/s, loss=2.1926, lr=0.000348]
+Training:  42%|████▏     | 82/196 [00:25<00:28,  4.00it/s, loss=2.2114, lr=0.000348]
+Training:  64%|██████▍   | 125/196 [00:30<00:17,  4.09it/s, loss=2.2114, lr=0.000348]
+Training:  64%|██████▍   | 125/196 [00:36<00:17,  4.09it/s, loss=2.2049, lr=0.000347]
+Training:  86%|████████▌ | 168/196 [00:41<00:06,  4.09it/s, loss=2.2049, lr=0.000347]
+                                                                                     
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s]
+                                                 
+Epoch 83 | Time: 49s | T_Loss: 2.191 | V_Loss: 3.761 | BLEU: 6.42
+ >> Sample: <s>Last week, the ancient fog of the American private Act delivered temporary halt, triggering false discussions about the country’s plotic odds.</s> of the US-based
+
+Training:   0%|          | 0/196 [00:00<?, ?it/s]
+Training:   0%|          | 0/196 [00:00<?, ?it/s, loss=2.1514, lr=0.000346]
+Training:  22%|██▏       | 43/196 [00:10<00:36,  4.24it/s, loss=2.1514, lr=0.000346]
+Training:  22%|██▏       | 43/196 [00:12<00:36,  4.24it/s, loss=2.1906, lr=0.000346]
+Training:  44%|████▍     | 86/196 [00:21<00:27,  4.06it/s, loss=2.1906, lr=0.000346]
+Training:  44%|████▍     | 86/196 [00:24<00:27,  4.06it/s, loss=2.1984, lr=0.000345]
+Training:  65%|██████▍   | 127/196 [00:31<00:17,  4.05it/s, loss=2.1984, lr=0.000345]
+Training:  65%|██████▍   | 127/196 [00:37<00:17,  4.05it/s, loss=2.1939, lr=0.000345]
+Training:  86%|████████▌ | 168/196 [00:41<00:06,  4.02it/s, loss=2.1939, lr=0.000345]
+                                                                                     
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s]
+                                                 
+Epoch 84 | Time: 49s | T_Loss: 2.187 | V_Loss: 3.774 | BLEU: 6.46
+ >> Sample: <s>Last week, the ancient artiller “US Home” deliberately triggered a fierce debate about the falsehoods of national dramatic harvests.</s> the US government’s government
+ >> New Best! Saving to ./transformer_checkpoints/exp_128_layer_sinusoidal_512_8_6_2048_512_0.0005
+
+Training:   0%|          | 0/196 [00:00<?, ?it/s]
+Training:   0%|          | 0/196 [00:00<?, ?it/s, loss=2.1607, lr=0.000344]
+Training:  21%|██▏       | 42/196 [00:10<00:37,  4.13it/s, loss=2.1607, lr=0.000344]
+Training:  21%|██▏       | 42/196 [00:12<00:37,  4.13it/s, loss=2.1650, lr=0.000344]
+Training:  43%|████▎     | 85/196 [00:20<00:26,  4.20it/s, loss=2.1650, lr=0.000344]
+Training:  43%|████▎     | 85/196 [00:24<00:26,  4.20it/s, loss=2.1901, lr=0.000343]
+Training:  65%|██████▌   | 128/196 [00:30<00:16,  4.16it/s, loss=2.1901, lr=0.000343]
+Training:  65%|██████▌   | 128/196 [00:36<00:16,  4.16it/s, loss=2.1885, lr=0.000343]
+Training:  87%|████████▋ | 170/196 [00:40<00:06,  4.16it/s, loss=2.1885, lr=0.000343]
+                                                                                     
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s]
+                                                 
+Epoch 85 | Time: 48s | T_Loss: 2.182 | V_Loss: 3.770 | BLEU: 6.23
+ >> Sample: <s>Last week, the ancient artillery “US Home” deliberately stopped sowing a false debate about the country’s plague-based crop yield.</s> the US government
+
+Training:   0%|          | 0/196 [00:00<?, ?it/s]
+Training:   0%|          | 0/196 [00:00<?, ?it/s, loss=2.1313, lr=0.000342]
+Training:  21%|██▏       | 42/196 [00:10<00:36,  4.18it/s, loss=2.1313, lr=0.000342]
+Training:  21%|██▏       | 42/196 [00:12<00:36,  4.18it/s, loss=2.1684, lr=0.000342]
+Training:  43%|████▎     | 85/196 [00:20<00:26,  4.20it/s, loss=2.1684, lr=0.000342]
+Training:  43%|████▎     | 85/196 [00:24<00:26,  4.20it/s, loss=2.1936, lr=0.000341]
+Training:  65%|██████▌   | 128/196 [00:30<00:16,  4.16it/s, loss=2.1936, lr=0.000341]
+Training:  65%|██████▌   | 128/196 [00:36<00:16,  4.16it/s, loss=2.2079, lr=0.000341]
+Training:  87%|████████▋ | 170/196 [00:40<00:06,  4.15it/s, loss=2.2079, lr=0.000341]
+                                                                                     
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s]
+                                                 
+Epoch 86 | Time: 48s | T_Loss: 2.177 | V_Loss: 3.780 | BLEU: 6.34
+ >> Sample: <s>Last week, the ancient fashionable “American Home” delivered intentionally triggering false discussions about the country’s plague-driven performance.</s> the US-based
+
+Training:   0%|          | 0/196 [00:00<?, ?it/s]
+Training:   0%|          | 0/196 [00:00<?, ?it/s, loss=2.1122, lr=0.000340]
+Training:  21%|██        | 41/196 [00:10<00:38,  4.01it/s, loss=2.1122, lr=0.000340]
+Training:  21%|██        | 41/196 [00:12<00:38,  4.01it/s, loss=2.1561, lr=0.000340]
+Training:  42%|████▏     | 82/196 [00:20<00:28,  4.05it/s, loss=2.1561, lr=0.000340]
+Training:  42%|████▏     | 82/196 [00:25<00:28,  4.05it/s, loss=2.1786, lr=0.000339]
+Training:  63%|██████▎   | 123/196 [00:30<00:18,  4.02it/s, loss=2.1786, lr=0.000339]
+Training:  63%|██████▎   | 123/196 [00:37<00:18,  4.02it/s, loss=2.1772, lr=0.000339]
+Training:  84%|████████▍ | 165/196 [00:40<00:07,  4.07it/s, loss=2.1772, lr=0.000339]
+                                                                                     
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s]
+                                                 
+Epoch 87 | Time: 49s | T_Loss: 2.170 | V_Loss: 3.776 | BLEU: 6.43
+ >> Sample: <s>Last week, the ancient barbaric “American Home” was deliberately sloganized by false discussions about the country’s plague-driven plot.</s> the US
+
+Training:   0%|          | 0/196 [00:00<?, ?it/s]
+Training:   0%|          | 0/196 [00:00<?, ?it/s, loss=2.1332, lr=0.000338]
+Training:  21%|██▏       | 42/196 [00:10<00:37,  4.16it/s, loss=2.1332, lr=0.000338]
+Training:  21%|██▏       | 42/196 [00:12<00:37,  4.16it/s, loss=2.1626, lr=0.000338]
+Training:  43%|████▎     | 84/196 [00:20<00:26,  4.17it/s, loss=2.1626, lr=0.000338]
+Training:  43%|████▎     | 84/196 [00:24<00:26,  4.17it/s, loss=2.1883, lr=0.000337]
+Training:  64%|██████▍   | 126/196 [00:30<00:16,  4.14it/s, loss=2.1883, lr=0.000337]
+Training:  64%|██████▍   | 126/196 [00:36<00:16,  4.14it/s, loss=2.1743, lr=0.000337]
+Training:  86%|████████▌ | 168/196 [00:40<00:06,  4.08it/s, loss=2.1743, lr=0.000337]
+                                                                                     
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s]
+                                                 
+Epoch 88 | Time: 49s | T_Loss: 2.166 | V_Loss: 3.779 | BLEU: 6.17
+ >> Sample: <s>Last week, the hasty slogan “US private Home” came to an end, with surprise triggering false discussions about the country’s plague-dispositive.</s> of
+
+Training:   0%|          | 0/196 [00:00<?, ?it/s]
+Training:   0%|          | 0/196 [00:00<?, ?it/s, loss=2.1508, lr=0.000336]
+Training:  21%|██▏       | 42/196 [00:10<00:36,  4.19it/s, loss=2.1508, lr=0.000336]
+Training:  21%|██▏       | 42/196 [00:12<00:36,  4.19it/s, loss=2.1492, lr=0.000336]
+Training:  44%|████▍     | 86/196 [00:20<00:25,  4.29it/s, loss=2.1492, lr=0.000336]
+Training:  44%|████▍     | 86/196 [00:23<00:25,  4.29it/s, loss=2.1721, lr=0.000336]
+Training:  66%|██████▋   | 130/196 [00:30<00:15,  4.24it/s, loss=2.1721, lr=0.000336]
+Training:  66%|██████▋   | 130/196 [00:35<00:15,  4.24it/s, loss=2.1551, lr=0.000335]
+Training:  88%|████████▊ | 172/196 [00:41<00:05,  4.16it/s, loss=2.1551, lr=0.000335]
+                                                                                     
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s]
+                                                 
+Epoch 89 | Time: 48s | T_Loss: 2.161 | V_Loss: 3.782 | BLEU: 6.41
+ >> Sample: <s>Last week, the cliché “American Home” stopped temporarily, triggering heated discussions about the country’s plague-based plot.</s> of the American Person Mouses
+
+Training:   0%|          | 0/196 [00:00<?, ?it/s]
+Training:   0%|          | 0/196 [00:00<?, ?it/s, loss=2.1462, lr=0.000335]
+Training:  22%|██▏       | 43/196 [00:10<00:36,  4.21it/s, loss=2.1462, lr=0.000335]
+Training:  22%|██▏       | 43/196 [00:12<00:36,  4.21it/s, loss=2.1497, lr=0.000334]
+Training:  44%|████▍     | 86/196 [00:20<00:26,  4.14it/s, loss=2.1497, lr=0.000334]
+Training:  44%|████▍     | 86/196 [00:24<00:26,  4.14it/s, loss=2.1919, lr=0.000334]
+Training:  65%|██████▍   | 127/196 [00:30<00:16,  4.09it/s, loss=2.1919, lr=0.000334]
+Training:  65%|██████▍   | 127/196 [00:36<00:16,  4.09it/s, loss=2.1591, lr=0.000333]
+Training:  87%|████████▋ | 170/196 [00:41<00:06,  4.14it/s, loss=2.1591, lr=0.000333]
+                                                                                     
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s]
+                                                 
+Epoch 90 | Time: 48s | T_Loss: 2.156 | V_Loss: 3.798 | BLEU: 6.32
+ >> Sample: <s>Last week, the cloud “US Home” came to an intentional halt, triggering a false debate about the country’s plot-for-deposit.</s> of the US-
+
+Training:   0%|          | 0/196 [00:00<?, ?it/s]
+Training:   0%|          | 0/196 [00:00<?, ?it/s, loss=2.1174, lr=0.000333]
+Training:  21%|██▏       | 42/196 [00:10<00:36,  4.18it/s, loss=2.1174, lr=0.000333]
+Training:  21%|██▏       | 42/196 [00:12<00:36,  4.18it/s, loss=2.1385, lr=0.000332]
+Training:  43%|████▎     | 84/196 [00:20<00:27,  4.06it/s, loss=2.1385, lr=0.000332]
+Training:  43%|████▎     | 84/196 [00:24<00:27,  4.06it/s, loss=2.1527, lr=0.000332]
+Training:  65%|██████▍   | 127/196 [00:30<00:16,  4.14it/s, loss=2.1527, lr=0.000332]
+Training:  65%|██████▍   | 127/196 [00:36<00:16,  4.14it/s, loss=2.1419, lr=0.000331]
+Training:  87%|████████▋ | 170/196 [00:41<00:06,  4.15it/s, loss=2.1419, lr=0.000331]
+                                                                                     
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s]
+                                                 
+Epoch 91 | Time: 48s | T_Loss: 2.152 | V_Loss: 3.794 | BLEU: 6.07
+ >> Sample: <s>Last week, the hasty newspaper “The American Home” came to an interim halt, with the intention of triggering a heated debate about the falsehoods of national output.</s>,
+
+Training:   0%|          | 0/196 [00:00<?, ?it/s]
+Training:   0%|          | 0/196 [00:00<?, ?it/s, loss=2.1211, lr=0.000331]
+Training:  22%|██▏       | 43/196 [00:10<00:35,  4.27it/s, loss=2.1211, lr=0.000331]
+Training:  22%|██▏       | 43/196 [00:12<00:35,  4.27it/s, loss=2.1133, lr=0.000330]
+Training:  22%|██▏       | 43/196 [00:20<00:35,  4.27it/s, loss=2.1133, lr=0.000330]
+Training:  44%|████▍     | 86/196 [00:20<00:26,  4.16it/s, loss=2.1133, lr=0.000330]
+Training:  44%|████▍     | 86/196 [00:24<00:26,  4.16it/s, loss=2.1666, lr=0.000330]
+Training:  66%|██████▌   | 129/196 [00:30<00:15,  4.20it/s, loss=2.1666, lr=0.000330]
+Training:  66%|██████▌   | 129/196 [00:36<00:15,  4.20it/s, loss=2.1771, lr=0.000330]
+Training:  88%|████████▊ | 172/196 [00:41<00:05,  4.16it/s, loss=2.1771, lr=0.000330]
+                                                                                     
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s]
+                                                 
+Epoch 92 | Time: 48s | T_Loss: 2.148 | V_Loss: 3.798 | BLEU: 6.23
+ >> Sample: <s>Last week, the ancient barbarians Foods Against the United States surprised a false debate about the country’s plague-campaign.</s> the tipping point in the first
+
+Training:   0%|          | 0/196 [00:00<?, ?it/s]
+Training:   0%|          | 0/196 [00:00<?, ?it/s, loss=2.0882, lr=0.000329]
+Training:  22%|██▏       | 43/196 [00:10<00:35,  4.29it/s, loss=2.0882, lr=0.000329]
+Training:  22%|██▏       | 43/196 [00:11<00:35,  4.29it/s, loss=2.1265, lr=0.000329]
+Training:  44%|████▍     | 86/196 [00:20<00:25,  4.26it/s, loss=2.1265, lr=0.000329]
+Training:  44%|████▍     | 86/196 [00:23<00:25,  4.26it/s, loss=2.1340, lr=0.000328]
+Training:  66%|██████▌   | 129/196 [00:31<00:16,  4.11it/s, loss=2.1340, lr=0.000328]
+Training:  66%|██████▌   | 129/196 [00:36<00:16,  4.11it/s, loss=2.1495, lr=0.000328]
+Training:  86%|████████▌ | 169/196 [00:41<00:06,  4.05it/s, loss=2.1495, lr=0.000328]
+                                                                                     
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s]
+                                                 
+Epoch 93 | Time: 48s | T_Loss: 2.141 | V_Loss: 3.790 | BLEU: 6.07
+ >> Sample: <s>Last week, the ancient column “American Home” came to an intentional suspension of false discussions about the country’s plague-country performance.</s> the US-based
+
+Training:   0%|          | 0/196 [00:00<?, ?it/s]
+Training:   0%|          | 0/196 [00:00<?, ?it/s, loss=2.1282, lr=0.000327]
+Training:  21%|██        | 41/196 [00:10<00:38,  4.03it/s, loss=2.1282, lr=0.000327]
+Training:  21%|██        | 41/196 [00:12<00:38,  4.03it/s, loss=2.1398, lr=0.000327]
+Training:  42%|████▏     | 82/196 [00:20<00:28,  4.02it/s, loss=2.1398, lr=0.000327]
+Training:  42%|████▏     | 82/196 [00:24<00:28,  4.02it/s, loss=2.1280, lr=0.000326]
+Training:  63%|██████▎   | 123/196 [00:30<00:18,  4.05it/s, loss=2.1280, lr=0.000326]
+Training:  63%|██████▎   | 123/196 [00:37<00:18,  4.05it/s, loss=2.1649, lr=0.000326]
+Training:  84%|████████▎ | 164/196 [00:40<00:07,  4.05it/s, loss=2.1649, lr=0.000326]
+                                                                                     
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s]
+                                                 
+Epoch 94 | Time: 49s | T_Loss: 2.137 | V_Loss: 3.800 | BLEU: 6.23
+ >> Sample: <s>Last week, the advent of the ancient show “American Home” deliberately triggered a heated debate about the country’s dramatic harvesting.</s> the heightened spread of the US-
+
+Training:   0%|          | 0/196 [00:00<?, ?it/s]
+Training:   0%|          | 0/196 [00:00<?, ?it/s, loss=2.1244, lr=0.000326]
+Training:  20%|██        | 40/196 [00:10<00:39,  3.94it/s, loss=2.1244, lr=0.000326]
+Training:  20%|██        | 40/196 [00:12<00:39,  3.94it/s, loss=2.1127, lr=0.000325]
+Training:  42%|████▏     | 82/196 [00:20<00:28,  4.06it/s, loss=2.1127, lr=0.000325]
+Training:  42%|████▏     | 82/196 [00:24<00:28,  4.06it/s, loss=2.1150, lr=0.000325]
+Training:  63%|██████▎   | 124/196 [00:30<00:17,  4.07it/s, loss=2.1150, lr=0.000325]
+Training:  63%|██████▎   | 124/196 [00:37<00:17,  4.07it/s, loss=2.1273, lr=0.000324]
+Training:  85%|████████▍ | 166/196 [00:40<00:07,  4.10it/s, loss=2.1273, lr=0.000324]
+                                                                                     
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s]
+                                                 
+Epoch 95 | Time: 48s | T_Loss: 2.133 | V_Loss: 3.805 | BLEU: 6.00
+ >> Sample: <s>Last week, the ancient showdown of the American Homey deliberately triggered a false debate about the performance of national output.</s> the day.</s> this day of the day, the casual
+
+Training:   0%|          | 0/196 [00:00<?, ?it/s]
+Training:   0%|          | 0/196 [00:00<?, ?it/s, loss=2.1085, lr=0.000324]
+Training:  21%|██        | 41/196 [00:10<00:37,  4.09it/s, loss=2.1085, lr=0.000324]
+Training:  21%|██        | 41/196 [00:12<00:37,  4.09it/s, loss=2.1600, lr=0.000323]
+Training:  42%|████▏     | 82/196 [00:20<00:28,  4.05it/s, loss=2.1600, lr=0.000323]
+Training:  42%|████▏     | 82/196 [00:25<00:28,  4.05it/s, loss=2.1238, lr=0.000323]
+Training:  63%|██████▎   | 123/196 [00:30<00:18,  4.02it/s, loss=2.1238, lr=0.000323]
+Training:  63%|██████▎   | 123/196 [00:37<00:18,  4.02it/s, loss=2.1123, lr=0.000323]
+Training:  83%|████████▎ | 163/196 [00:40<00:08,  3.98it/s, loss=2.1123, lr=0.000323]
+                                                                                     
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s]
+                                                 
+Epoch 96 | Time: 49s | T_Loss: 2.134 | V_Loss: 3.822 | BLEU: 6.49
+ >> Sample: <s>Last week, the ancient showdown “The American Houses” deliberately triggered a heated debate about the falsehood of national output.</s> of the US-based “Home” sn
+ >> New Best! Saving to ./transformer_checkpoints/exp_128_layer_sinusoidal_512_8_6_2048_512_0.0005
+
+Training:   0%|          | 0/196 [00:00<?, ?it/s]
+Training:   0%|          | 0/196 [00:00<?, ?it/s, loss=2.1162, lr=0.000322]
+Training:  21%|██        | 41/196 [00:10<00:37,  4.08it/s, loss=2.1162, lr=0.000322]
+Training:  21%|██        | 41/196 [00:12<00:37,  4.08it/s, loss=2.1252, lr=0.000322]
+Training:  42%|████▏     | 82/196 [00:20<00:28,  4.07it/s, loss=2.1252, lr=0.000322]
+Training:  42%|████▏     | 82/196 [00:24<00:28,  4.07it/s, loss=2.1347, lr=0.000321]
+Training:  63%|██████▎   | 123/196 [00:30<00:17,  4.06it/s, loss=2.1347, lr=0.000321]
+Training:  63%|██████▎   | 123/196 [00:37<00:17,  4.06it/s, loss=2.1413, lr=0.000321]
+Training:  84%|████████▎ | 164/196 [00:40<00:07,  4.06it/s, loss=2.1413, lr=0.000321]
+                                                                                     
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s]
+                                                 
+Epoch 97 | Time: 49s | T_Loss: 2.129 | V_Loss: 3.807 | BLEU: 6.10
+ >> Sample: <s>Last week, the ancient showy-home “US House” cessation deliberately triggered vacation of false discussions about national yields.</s> of the US-based Home P
+
+Training:   0%|          | 0/196 [00:00<?, ?it/s]
+Training:   0%|          | 0/196 [00:00<?, ?it/s, loss=2.0927, lr=0.000321]
+Training:  23%|██▎       | 45/196 [00:10<00:34,  4.43it/s, loss=2.0927, lr=0.000321]
+Training:  23%|██▎       | 45/196 [00:11<00:34,  4.43it/s, loss=2.1119, lr=0.000320]
+Training:  46%|████▌     | 90/196 [00:20<00:24,  4.34it/s, loss=2.1119, lr=0.000320]
+Training:  46%|████▌     | 90/196 [00:23<00:24,  4.34it/s, loss=2.0918, lr=0.000320]
+Training:  68%|██████▊   | 133/196 [00:30<00:14,  4.31it/s, loss=2.0918, lr=0.000320]
+Training:  68%|██████▊   | 133/196 [00:35<00:14,  4.31it/s, loss=2.0994, lr=0.000319]
+Training:  90%|████████▉ | 176/196 [00:41<00:04,  4.23it/s, loss=2.0994, lr=0.000319]
+                                                                                     
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s]
+                                                 
+Epoch 98 | Time: 46s | T_Loss: 2.120 | V_Loss: 3.818 | BLEU: 6.03
+ >> Sample: <s>Last week, the ancient showdown on the American private homes led to intentional false discussion about the performance of national crop yields.</s> of the US-based “Home” disseminated
+
+Training:   0%|          | 0/196 [00:00<?, ?it/s]
+Training:   0%|          | 0/196 [00:00<?, ?it/s, loss=2.1008, lr=0.000319]
+Training:  21%|██▏       | 42/196 [00:10<00:37,  4.15it/s, loss=2.1008, lr=0.000319]
+Training:  21%|██▏       | 42/196 [00:12<00:37,  4.15it/s, loss=2.1149, lr=0.000318]
+Training:  43%|████▎     | 84/196 [00:20<00:27,  4.03it/s, loss=2.1149, lr=0.000318]
+Training:  43%|████▎     | 84/196 [00:24<00:27,  4.03it/s, loss=2.1442, lr=0.000318]
+Training:  64%|██████▍   | 125/196 [00:30<00:17,  4.05it/s, loss=2.1442, lr=0.000318]
+Training:  64%|██████▍   | 125/196 [00:37<00:17,  4.05it/s, loss=2.1394, lr=0.000318]
+Training:  85%|████████▌ | 167/196 [00:41<00:07,  4.07it/s, loss=2.1394, lr=0.000318]
+                                                                                     
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s]
+                                                 
+Epoch 99 | Time: 49s | T_Loss: 2.115 | V_Loss: 3.815 | BLEU: 6.17
+ >> Sample: <s>Last week, the cliché “US private Home” came to an intention of triggering a heated debate about the falsehoods of a country’s plague.</s> of the US-based “
+
+Training:   0%|          | 0/196 [00:00<?, ?it/s]
+Training:   0%|          | 0/196 [00:00<?, ?it/s, loss=2.0942, lr=0.000317]
+Training:  21%|██▏       | 42/196 [00:10<00:36,  4.18it/s, loss=2.0942, lr=0.000317]
+Training:  21%|██▏       | 42/196 [00:12<00:36,  4.18it/s, loss=2.1044, lr=0.000317]
+Training:  43%|████▎     | 85/196 [00:20<00:26,  4.21it/s, loss=2.1044, lr=0.000317]
+Training:  43%|████▎     | 85/196 [00:24<00:26,  4.21it/s, loss=2.1096, lr=0.000316]
+Training:  65%|██████▌   | 128/196 [00:30<00:16,  4.15it/s, loss=2.1096, lr=0.000316]
+Training:  65%|██████▌   | 128/196 [00:36<00:16,  4.15it/s, loss=2.1287, lr=0.000316]
+Training:  87%|████████▋ | 170/196 [00:41<00:06,  4.13it/s, loss=2.1287, lr=0.000316]
+                                                                                     
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s]
+                                                 
+Epoch 100 | Time: 48s | T_Loss: 2.112 | V_Loss: 3.822 | BLEU: 5.86
+ >> Sample: <s>Last week, the ancient showdown “US House and Home” deliberately triggered a heated debate about the falsehoods of national output.</s> of the US-US April 2,
+
+=== Final Test Evaluation ===
+
+Evaluating:   0%|          | 0/1 [00:00<?, ?it/s]
+                                                 
+Test Set -> Loss: 4.4375 | BLEU: 6.38
