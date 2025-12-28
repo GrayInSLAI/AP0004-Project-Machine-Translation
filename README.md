@@ -1,6 +1,6 @@
 # AP0004 Project: Machine-Translation
 
-**NOTE: ** Due to file size limitations, all tokenizers and model checkpoints have not been uploaded. Apart from this, all code, data, and runtime logs related to this project have been uploaded.
+__NOTE:__ Due to file size limitations, all tokenizers and model checkpoints have not been uploaded. Apart from this, all code, data, and runtime logs related to this project have been uploaded.
 
 
 
